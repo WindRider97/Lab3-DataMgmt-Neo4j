@@ -1,0 +1,2843 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_012fd1a1acc2ab66d488296a2526fb1f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_012fd1a1acc2ab66d488296a2526fb1f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_012fd1a1acc2ab66d488296a2526fb1f = L.map(
+                "map_012fd1a1acc2ab66d488296a2526fb1f",
+                {
+                    center: [46.800663464, 8.222665776],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 8,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_92142a48a0605aaa94c2089e78157dda = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_92142a48a0605aaa94c2089e78157dda.addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+    
+            var circle_560f5ca60fc0ebb1ff132d179a6f005e = L.circle(
+                [47.3641, 8.530788],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_9f4f149266d144f2d8c2a58b64b6c1c9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f464434ee75240f477537fb8b3340ca1 = $(`<div id="html_f464434ee75240f477537fb8b3340ca1" style="width: 100.0%; height: 100.0%;">Zurich</div>`)[0];
+                popup_9f4f149266d144f2d8c2a58b64b6c1c9.setContent(html_f464434ee75240f477537fb8b3340ca1);
+            
+        
+
+        circle_560f5ca60fc0ebb1ff132d179a6f005e.bindPopup(popup_9f4f149266d144f2d8c2a58b64b6c1c9)
+        ;
+
+        
+    
+    
+            var circle_a4b723305bf090bf08602f9d00627edf = L.circle(
+                [47.39135, 8.051251],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_1f55197b4107615db4c24c05e6e4a85c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_72d6c0331866e837eadcc2ca7cb5cb28 = $(`<div id="html_72d6c0331866e837eadcc2ca7cb5cb28" style="width: 100.0%; height: 100.0%;">Aarau</div>`)[0];
+                popup_1f55197b4107615db4c24c05e6e4a85c.setContent(html_72d6c0331866e837eadcc2ca7cb5cb28);
+            
+        
+
+        circle_a4b723305bf090bf08602f9d00627edf.bindPopup(popup_1f55197b4107615db4c24c05e6e4a85c)
+        ;
+
+        
+    
+    
+            var circle_0ca4727945bf4ab6c96ada7cfe0fd3cc = L.circle(
+                [47.049152, 8.549482],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_74a4b952f63368a5a8e936de45df97b7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ba4d40946485fbe7d2578f20128b313d = $(`<div id="html_ba4d40946485fbe7d2578f20128b313d" style="width: 100.0%; height: 100.0%;">Arth-Goldau</div>`)[0];
+                popup_74a4b952f63368a5a8e936de45df97b7.setContent(html_ba4d40946485fbe7d2578f20128b313d);
+            
+        
+
+        circle_0ca4727945bf4ab6c96ada7cfe0fd3cc.bindPopup(popup_74a4b952f63368a5a8e936de45df97b7)
+        ;
+
+        
+    
+    
+            var circle_fb3e01021f7ded12f29e9b702cb11845 = L.circle(
+                [47.546944, 7.59],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_199e48c1b9ff5026bcfba11544785dd8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_417003ee2d4c5c6f346bdb2efb6a0537 = $(`<div id="html_417003ee2d4c5c6f346bdb2efb6a0537" style="width: 100.0%; height: 100.0%;">Basel</div>`)[0];
+                popup_199e48c1b9ff5026bcfba11544785dd8.setContent(html_417003ee2d4c5c6f346bdb2efb6a0537);
+            
+        
+
+        circle_fb3e01021f7ded12f29e9b702cb11845.bindPopup(popup_199e48c1b9ff5026bcfba11544785dd8)
+        ;
+
+        
+    
+    
+            var circle_519d43dfa80c9a596dfa3130869e546f = L.circle(
+                [46.19544, 9.029505],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_cd4ad806391d15453adb8043f85afe44 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9a7e4dda3d90b7bdeb615600477d0d1b = $(`<div id="html_9a7e4dda3d90b7bdeb615600477d0d1b" style="width: 100.0%; height: 100.0%;">Bellinzona</div>`)[0];
+                popup_cd4ad806391d15453adb8043f85afe44.setContent(html_9a7e4dda3d90b7bdeb615600477d0d1b);
+            
+        
+
+        circle_519d43dfa80c9a596dfa3130869e546f.bindPopup(popup_cd4ad806391d15453adb8043f85afe44)
+        ;
+
+        
+    
+    
+            var circle_d984c250905b3edbdaf65ca2209996c9 = L.circle(
+                [46.948819, 7.439117],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_ea3f33ff03db66901e50bdfdaa50357c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7e876a4e0534959f86ce323ff80c896e = $(`<div id="html_7e876a4e0534959f86ce323ff80c896e" style="width: 100.0%; height: 100.0%;">Bern</div>`)[0];
+                popup_ea3f33ff03db66901e50bdfdaa50357c.setContent(html_7e876a4e0534959f86ce323ff80c896e);
+            
+        
+
+        circle_d984c250905b3edbdaf65ca2209996c9.bindPopup(popup_ea3f33ff03db66901e50bdfdaa50357c)
+        ;
+
+        
+    
+    
+            var circle_37df77568feac4976813a420d7f29e8f = L.circle(
+                [47.132885, 7.242918],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_c08ae2c9872a70c88c2118e8aa5095e0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4599a68fbf9f4841df9b46405834298d = $(`<div id="html_4599a68fbf9f4841df9b46405834298d" style="width: 100.0%; height: 100.0%;">Biel/Bienne</div>`)[0];
+                popup_c08ae2c9872a70c88c2118e8aa5095e0.setContent(html_4599a68fbf9f4841df9b46405834298d);
+            
+        
+
+        circle_37df77568feac4976813a420d7f29e8f.bindPopup(popup_c08ae2c9872a70c88c2118e8aa5095e0)
+        ;
+
+        
+    
+    
+            var circle_84f308bc33d15934d3f18eb9e2db41d9 = L.circle(
+                [46.319444, 7.988056],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_8a55828abbaea60c38c0fa4399f83d14 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3083be9c6692410ee60e55cb652d513a = $(`<div id="html_3083be9c6692410ee60e55cb652d513a" style="width: 100.0%; height: 100.0%;">Brig</div>`)[0];
+                popup_8a55828abbaea60c38c0fa4399f83d14.setContent(html_3083be9c6692410ee60e55cb652d513a);
+            
+        
+
+        circle_84f308bc33d15934d3f18eb9e2db41d9.bindPopup(popup_8a55828abbaea60c38c0fa4399f83d14)
+        ;
+
+        
+    
+    
+            var circle_68784e2ab4c6cf9edd27640f1814d7c0 = L.circle(
+                [45.83219, 9.031449],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_a7e861151a439435f40dff7bfc7c6746 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_84a52ef5e881b31b1b35770d2b3c5952 = $(`<div id="html_84a52ef5e881b31b1b35770d2b3c5952" style="width: 100.0%; height: 100.0%;">Chiasso</div>`)[0];
+                popup_a7e861151a439435f40dff7bfc7c6746.setContent(html_84a52ef5e881b31b1b35770d2b3c5952);
+            
+        
+
+        circle_68784e2ab4c6cf9edd27640f1814d7c0.bindPopup(popup_a7e861151a439435f40dff7bfc7c6746)
+        ;
+
+        
+    
+    
+            var circle_29db44c6b92b9e8e71746d7d30f6bb4b = L.circle(
+                [46.85308, 9.528919],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_b83e2410221f5f248639c8b624969694 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_71f02cc0ae9eec14c515043fe1dd6690 = $(`<div id="html_71f02cc0ae9eec14c515043fe1dd6690" style="width: 100.0%; height: 100.0%;">Chur</div>`)[0];
+                popup_b83e2410221f5f248639c8b624969694.setContent(html_71f02cc0ae9eec14c515043fe1dd6690);
+            
+        
+
+        circle_29db44c6b92b9e8e71746d7d30f6bb4b.bindPopup(popup_b83e2410221f5f248639c8b624969694)
+        ;
+
+        
+    
+    
+            var circle_565da9212da4871f1630543b130064dd = L.circle(
+                [47.361996, 7.350065],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_735bc426aa3c74ce1e094ce9280cd04d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5d1304012f5976b1d12b9f2b1e9e5a36 = $(`<div id="html_5d1304012f5976b1d12b9f2b1e9e5a36" style="width: 100.0%; height: 100.0%;">Delemont</div>`)[0];
+                popup_735bc426aa3c74ce1e094ce9280cd04d.setContent(html_5d1304012f5976b1d12b9f2b1e9e5a36);
+            
+        
+
+        circle_565da9212da4871f1630543b130064dd.bindPopup(popup_735bc426aa3c74ce1e094ce9280cd04d)
+        ;
+
+        
+    
+    
+            var circle_e63f74378f45afaf8c1b20280e443abd = L.circle(
+                [46.803269, 7.151031],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_51c7e99e30df4307fb6551cd0e402dde = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0946a5145ed7cdd36fc569a1bad3f213 = $(`<div id="html_0946a5145ed7cdd36fc569a1bad3f213" style="width: 100.0%; height: 100.0%;">Fribourg</div>`)[0];
+                popup_51c7e99e30df4307fb6551cd0e402dde.setContent(html_0946a5145ed7cdd36fc569a1bad3f213);
+            
+        
+
+        circle_e63f74378f45afaf8c1b20280e443abd.bindPopup(popup_51c7e99e30df4307fb6551cd0e402dde)
+        ;
+
+        
+    
+    
+            var circle_dcfabd3dac06dba98e59f694143b201b = L.circle(
+                [46.210217, 6.142447],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_be116a980bc22a39e757cf44750b5664 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3bbe8771b48653281c7e2dd89068e9b4 = $(`<div id="html_3bbe8771b48653281c7e2dd89068e9b4" style="width: 100.0%; height: 100.0%;">Geneve</div>`)[0];
+                popup_be116a980bc22a39e757cf44750b5664.setContent(html_3bbe8771b48653281c7e2dd89068e9b4);
+            
+        
+
+        circle_dcfabd3dac06dba98e59f694143b201b.bindPopup(popup_be116a980bc22a39e757cf44750b5664)
+        ;
+
+        
+    
+    
+            var circle_e1921e5884845dc884301954fdc01e15 = L.circle(
+                [46.69, 7.868889],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_48fa97906150ce5ed2e5b08991f94572 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_38d8c7ecc195bcfc865895e60fddfec1 = $(`<div id="html_38d8c7ecc195bcfc865895e60fddfec1" style="width: 100.0%; height: 100.0%;">Interlaken</div>`)[0];
+                popup_48fa97906150ce5ed2e5b08991f94572.setContent(html_38d8c7ecc195bcfc865895e60fddfec1);
+            
+        
+
+        circle_e1921e5884845dc884301954fdc01e15.bindPopup(popup_48fa97906150ce5ed2e5b08991f94572)
+        ;
+
+        
+    
+    
+            var circle_631f5d9be34ec044826c7ad0bdf33816 = L.circle(
+                [47.658754, 9.177312],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_7c1b5034834dc5db213b4498d1f3c9c5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1f820c529efd386ab9bd546a363e3bac = $(`<div id="html_1f820c529efd386ab9bd546a363e3bac" style="width: 100.0%; height: 100.0%;">Konstanz</div>`)[0];
+                popup_7c1b5034834dc5db213b4498d1f3c9c5.setContent(html_1f820c529efd386ab9bd546a363e3bac);
+            
+        
+
+        circle_631f5d9be34ec044826c7ad0bdf33816.bindPopup(popup_7c1b5034834dc5db213b4498d1f3c9c5)
+        ;
+
+        
+    
+    
+            var circle_91b0db306a70879e0bbe059e234e9224 = L.circle(
+                [46.516785, 6.629096],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_1fd684829e2f6ce9d0ba1bc00b083a79 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9e9075f4c327586480e7b715532509a2 = $(`<div id="html_9e9075f4c327586480e7b715532509a2" style="width: 100.0%; height: 100.0%;">Lausanne</div>`)[0];
+                popup_1fd684829e2f6ce9d0ba1bc00b083a79.setContent(html_9e9075f4c327586480e7b715532509a2);
+            
+        
+
+        circle_91b0db306a70879e0bbe059e234e9224.bindPopup(popup_1fd684829e2f6ce9d0ba1bc00b083a79)
+        ;
+
+        
+    
+    
+            var circle_5f18a125203ad13ea496c658022472ed = L.circle(
+                [47.484461, 7.731367],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_c1bfa72a6bf141942fd7a1bac7a9f326 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f306a53d92a6a16ee22fb94a3309a381 = $(`<div id="html_f306a53d92a6a16ee22fb94a3309a381" style="width: 100.0%; height: 100.0%;">Liestal</div>`)[0];
+                popup_c1bfa72a6bf141942fd7a1bac7a9f326.setContent(html_f306a53d92a6a16ee22fb94a3309a381);
+            
+        
+
+        circle_5f18a125203ad13ea496c658022472ed.bindPopup(popup_c1bfa72a6bf141942fd7a1bac7a9f326)
+        ;
+
+        
+    
+    
+            var circle_bba155b3ad14fdde317599d2fb818885 = L.circle(
+                [47.050169, 8.310161],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_1647e66eb16bad03d552293d12c1c8ce = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1b724e408ae50f0d962f6a28beae9679 = $(`<div id="html_1b724e408ae50f0d962f6a28beae9679" style="width: 100.0%; height: 100.0%;">Luzern</div>`)[0];
+                popup_1647e66eb16bad03d552293d12c1c8ce.setContent(html_1b724e408ae50f0d962f6a28beae9679);
+            
+        
+
+        circle_bba155b3ad14fdde317599d2fb818885.bindPopup(popup_1647e66eb16bad03d552293d12c1c8ce)
+        ;
+
+        
+    
+    
+            var circle_fc591c75ab40eeeb9b854313d1a5005d = L.circle(
+                [46.00551, 8.946878],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_df041c2a04e6ae3e4a4daac91d32cbd3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7d196f9a2524e42b1ed3a6b14aa5b180 = $(`<div id="html_7d196f9a2524e42b1ed3a6b14aa5b180" style="width: 100.0%; height: 100.0%;">Lugano</div>`)[0];
+                popup_df041c2a04e6ae3e4a4daac91d32cbd3.setContent(html_7d196f9a2524e42b1ed3a6b14aa5b180);
+            
+        
+
+        circle_fc591c75ab40eeeb9b854313d1a5005d.bindPopup(popup_df041c2a04e6ae3e4a4daac91d32cbd3)
+        ;
+
+        
+    
+    
+            var circle_d63edacecd8d33a827187baf25493a52 = L.circle(
+                [46.435875, 6.910434],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_b6a1c1feee5d39879025afe6eef3fa32 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c6e50fc8ba9cbc6e31e46eb3cb1fed0c = $(`<div id="html_c6e50fc8ba9cbc6e31e46eb3cb1fed0c" style="width: 100.0%; height: 100.0%;">Montreux</div>`)[0];
+                popup_b6a1c1feee5d39879025afe6eef3fa32.setContent(html_c6e50fc8ba9cbc6e31e46eb3cb1fed0c);
+            
+        
+
+        circle_d63edacecd8d33a827187baf25493a52.bindPopup(popup_b6a1c1feee5d39879025afe6eef3fa32)
+        ;
+
+        
+    
+    
+            var circle_325c9bb8146e8b926f7e7a396801cfda = L.circle(
+                [46.996727, 6.935713],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_79062a7e6ef8fa0e875a9b4dd642ebb4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4cc2765d7d2a07f864e30ed7a358f145 = $(`<div id="html_4cc2765d7d2a07f864e30ed7a358f145" style="width: 100.0%; height: 100.0%;">Neuchatel</div>`)[0];
+                popup_79062a7e6ef8fa0e875a9b4dd642ebb4.setContent(html_4cc2765d7d2a07f864e30ed7a358f145);
+            
+        
+
+        circle_325c9bb8146e8b926f7e7a396801cfda.bindPopup(popup_79062a7e6ef8fa0e875a9b4dd642ebb4)
+        ;
+
+        
+    
+    
+            var circle_43db2c3ea62e0ac735bcd9ce252d7771 = L.circle(
+                [47.35193, 7.907683],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_ebed7a5c8ea6dc94ba5ae7c668d5a045 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_36dbc6a44903c7b041292ca9a5977e17 = $(`<div id="html_36dbc6a44903c7b041292ca9a5977e17" style="width: 100.0%; height: 100.0%;">Olten</div>`)[0];
+                popup_ebed7a5c8ea6dc94ba5ae7c668d5a045.setContent(html_36dbc6a44903c7b041292ca9a5977e17);
+            
+        
+
+        circle_43db2c3ea62e0ac735bcd9ce252d7771.bindPopup(popup_ebed7a5c8ea6dc94ba5ae7c668d5a045)
+        ;
+
+        
+    
+    
+            var circle_fc0905b0a92949a454ce9889b63a76b5 = L.circle(
+                [47.565556, 9.379444],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_8df9a9276b7d0139f4336bdb12a9b60d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f72a541a0f6478596284dfb23b1a00ba = $(`<div id="html_f72a541a0f6478596284dfb23b1a00ba" style="width: 100.0%; height: 100.0%;">Romanshorn</div>`)[0];
+                popup_8df9a9276b7d0139f4336bdb12a9b60d.setContent(html_f72a541a0f6478596284dfb23b1a00ba);
+            
+        
+
+        circle_fc0905b0a92949a454ce9889b63a76b5.bindPopup(popup_8df9a9276b7d0139f4336bdb12a9b60d)
+        ;
+
+        
+    
+    
+            var circle_330fd2263f8c033467aa53bb1f289b32 = L.circle(
+                [46.69351, 6.911815],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_ccaf5a1a7c8e8478376ea14aa3525bd7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_98c5e0156c6e3c3384cf238573af7aac = $(`<div id="html_98c5e0156c6e3c3384cf238573af7aac" style="width: 100.0%; height: 100.0%;">Romont</div>`)[0];
+                popup_ccaf5a1a7c8e8478376ea14aa3525bd7.setContent(html_98c5e0156c6e3c3384cf238573af7aac);
+            
+        
+
+        circle_330fd2263f8c033467aa53bb1f289b32.bindPopup(popup_ccaf5a1a7c8e8478376ea14aa3525bd7)
+        ;
+
+        
+    
+    
+            var circle_d531a54d97f4d20db7c170159b2d4638 = L.circle(
+                [47.423183, 9.369873],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_8a9c340ddc1c053e9ccbee8d93fae0ca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0355f1a5cf7663e9cd6a265ecea0f7e3 = $(`<div id="html_0355f1a5cf7663e9cd6a265ecea0f7e3" style="width: 100.0%; height: 100.0%;">St.Gallen</div>`)[0];
+                popup_8a9c340ddc1c053e9ccbee8d93fae0ca.setContent(html_0355f1a5cf7663e9cd6a265ecea0f7e3);
+            
+        
+
+        circle_d531a54d97f4d20db7c170159b2d4638.bindPopup(popup_8a9c340ddc1c053e9ccbee8d93fae0ca)
+        ;
+
+        
+    
+    
+            var circle_bde544cc303848cf8e376feb2aa8f394 = L.circle(
+                [47.698282, 8.632756],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_94caf6bc4954799d61183ac6985ed533 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e2b9881e4e5103a4dfeda299c83c7012 = $(`<div id="html_e2b9881e4e5103a4dfeda299c83c7012" style="width: 100.0%; height: 100.0%;">Schaffhausen</div>`)[0];
+                popup_94caf6bc4954799d61183ac6985ed533.setContent(html_e2b9881e4e5103a4dfeda299c83c7012);
+            
+        
+
+        circle_bde544cc303848cf8e376feb2aa8f394.bindPopup(popup_94caf6bc4954799d61183ac6985ed533)
+        ;
+
+        
+    
+    
+            var circle_852e7193f0bd9a9f65f2d5a20e981072 = L.circle(
+                [46.227553, 7.359197],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_df49f64ee57949481e70498583831805 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_743b550a8fb52260f3a3570a53e4501b = $(`<div id="html_743b550a8fb52260f3a3570a53e4501b" style="width: 100.0%; height: 100.0%;">Sion</div>`)[0];
+                popup_df49f64ee57949481e70498583831805.setContent(html_743b550a8fb52260f3a3570a53e4501b);
+            
+        
+
+        circle_852e7193f0bd9a9f65f2d5a20e981072.bindPopup(popup_df49f64ee57949481e70498583831805)
+        ;
+
+        
+    
+    
+            var circle_de32f58320538872e17f307b12bb473d = L.circle(
+                [47.204178, 7.542687],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_c74ac4849a1e8d9e48e28117990f53d0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7ec581edb7720a37ff6642a55579b39f = $(`<div id="html_7ec581edb7720a37ff6642a55579b39f" style="width: 100.0%; height: 100.0%;">Solothurn</div>`)[0];
+                popup_c74ac4849a1e8d9e48e28117990f53d0.setContent(html_7ec581edb7720a37ff6642a55579b39f);
+            
+        
+
+        circle_de32f58320538872e17f307b12bb473d.bindPopup(popup_c74ac4849a1e8d9e48e28117990f53d0)
+        ;
+
+        
+    
+    
+            var circle_e44abebaedc54ed5111aa7dc95aa55d8 = L.circle(
+                [46.754853, 7.629606],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_c6aca462132b9cc951b443007c410914 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a44118470592b42e37f71b6e1a9d56fa = $(`<div id="html_a44118470592b42e37f71b6e1a9d56fa" style="width: 100.0%; height: 100.0%;">Thun</div>`)[0];
+                popup_c6aca462132b9cc951b443007c410914.setContent(html_a44118470592b42e37f71b6e1a9d56fa);
+            
+        
+
+        circle_e44abebaedc54ed5111aa7dc95aa55d8.bindPopup(popup_c6aca462132b9cc951b443007c410914)
+        ;
+
+        
+    
+    
+            var circle_5b0a5c7d0bd8469571b5c15c3251c4b1 = L.circle(
+                [46.293889, 7.881389],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_b6268479c235afc93f8dd340b3d56a14 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7f9a2037b74ae68739d2bc7de93799c1 = $(`<div id="html_7f9a2037b74ae68739d2bc7de93799c1" style="width: 100.0%; height: 100.0%;">Visp</div>`)[0];
+                popup_b6268479c235afc93f8dd340b3d56a14.setContent(html_7f9a2037b74ae68739d2bc7de93799c1);
+            
+        
+
+        circle_5b0a5c7d0bd8469571b5c15c3251c4b1.bindPopup(popup_b6268479c235afc93f8dd340b3d56a14)
+        ;
+
+        
+    
+    
+            var circle_f3205b5199b3a752fc670487c4aacaf2 = L.circle(
+                [47.462389, 9.041],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_dc0f6b18176ad1e2abbf0cf167da0f83 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5c8b29a5007dff88166ef48d81131c08 = $(`<div id="html_5c8b29a5007dff88166ef48d81131c08" style="width: 100.0%; height: 100.0%;">Wil</div>`)[0];
+                popup_dc0f6b18176ad1e2abbf0cf167da0f83.setContent(html_5c8b29a5007dff88166ef48d81131c08);
+            
+        
+
+        circle_f3205b5199b3a752fc670487c4aacaf2.bindPopup(popup_dc0f6b18176ad1e2abbf0cf167da0f83)
+        ;
+
+        
+    
+    
+            var circle_a25502f474958896d04a493485e4244f = L.circle(
+                [47.500328, 8.723786],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_0967d353600a31f3e93e7b60ad181c52 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5895455f88402da9b46aad4b8e6c7b80 = $(`<div id="html_5895455f88402da9b46aad4b8e6c7b80" style="width: 100.0%; height: 100.0%;">Winterthur</div>`)[0];
+                popup_0967d353600a31f3e93e7b60ad181c52.setContent(html_5895455f88402da9b46aad4b8e6c7b80);
+            
+        
+
+        circle_a25502f474958896d04a493485e4244f.bindPopup(popup_0967d353600a31f3e93e7b60ad181c52)
+        ;
+
+        
+    
+    
+            var circle_a39c207010f723a6ee98c0bc0ccf28b4 = L.circle(
+                [46.781876, 6.641153],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_9c238190d2538db15e828fba820118c7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_14f45e012dca39530bc462727e999cf5 = $(`<div id="html_14f45e012dca39530bc462727e999cf5" style="width: 100.0%; height: 100.0%;">Yverdon-les-Bains</div>`)[0];
+                popup_9c238190d2538db15e828fba820118c7.setContent(html_14f45e012dca39530bc462727e999cf5);
+            
+        
+
+        circle_a39c207010f723a6ee98c0bc0ccf28b4.bindPopup(popup_9c238190d2538db15e828fba820118c7)
+        ;
+
+        
+    
+    
+            var circle_d36304f3c1a97c64a46401a845bc2d15 = L.circle(
+                [47.173622, 8.51529],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_bad8c9cf0fdf2f51ca7e55deefb18486 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e1e4268c0f203b82d58b4ca70ddc99b7 = $(`<div id="html_e1e4268c0f203b82d58b4ca70ddc99b7" style="width: 100.0%; height: 100.0%;">Zug</div>`)[0];
+                popup_bad8c9cf0fdf2f51ca7e55deefb18486.setContent(html_e1e4268c0f203b82d58b4ca70ddc99b7);
+            
+        
+
+        circle_d36304f3c1a97c64a46401a845bc2d15.bindPopup(popup_bad8c9cf0fdf2f51ca7e55deefb18486)
+        ;
+
+        
+    
+    
+            var poly_line_7bbb2d56d622df1e47f4f27ef490def2 = L.polyline(
+                [[47.173622, 8.51529], [47.3641, 8.530788]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_b3ee17fd85c6ee60ab0ab947af665531 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9b49169a234f6937c9e5e40858aea37c = $(`<div id="html_9b49169a234f6937c9e5e40858aea37c" style="width: 100.0%; height: 100.0%;">Connection: Zug - Zurich<br>Distance: 32 km<br>Tracks: 3<br>Time: 21</div>`)[0];
+                popup_b3ee17fd85c6ee60ab0ab947af665531.setContent(html_9b49169a234f6937c9e5e40858aea37c);
+            
+        
+
+        poly_line_7bbb2d56d622df1e47f4f27ef490def2.bindPopup(popup_b3ee17fd85c6ee60ab0ab947af665531)
+        ;
+
+        
+    
+    
+            var poly_line_5b5366a5f4da4c62f35d8c819d8ae9a7 = L.polyline(
+                [[47.500328, 8.723786], [47.3641, 8.530788]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_c843a3e77cef9eac45f645e172eefc19 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eca7729f80cd2672c3faca1a17f40a95 = $(`<div id="html_eca7729f80cd2672c3faca1a17f40a95" style="width: 100.0%; height: 100.0%;">Connection: Winterthur - Zurich<br>Distance: 25 km<br>Tracks: 4<br>Time: 19</div>`)[0];
+                popup_c843a3e77cef9eac45f645e172eefc19.setContent(html_eca7729f80cd2672c3faca1a17f40a95);
+            
+        
+
+        poly_line_5b5366a5f4da4c62f35d8c819d8ae9a7.bindPopup(popup_c843a3e77cef9eac45f645e172eefc19)
+        ;
+
+        
+    
+    
+            var poly_line_1ac589b1fa78b90e6af48d9f5e92cc4c = L.polyline(
+                [[47.698282, 8.632756], [47.3641, 8.530788]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_b12da31b40ae9a6a500e64ef64a3112e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_da8d13f5dc9dc47171f31876061658ef = $(`<div id="html_da8d13f5dc9dc47171f31876061658ef" style="width: 100.0%; height: 100.0%;">Connection: Schaffhausen - Zurich<br>Distance: 47 km<br>Tracks: 2<br>Time: 36</div>`)[0];
+                popup_b12da31b40ae9a6a500e64ef64a3112e.setContent(html_da8d13f5dc9dc47171f31876061658ef);
+            
+        
+
+        poly_line_1ac589b1fa78b90e6af48d9f5e92cc4c.bindPopup(popup_b12da31b40ae9a6a500e64ef64a3112e)
+        ;
+
+        
+    
+    
+            var poly_line_052930707bfc7d1c499fef8f36372807 = L.polyline(
+                [[46.85308, 9.528919], [47.3641, 8.530788]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_ee9c494cd8ca8361229e29d21aa4951d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7e7832132f59c9f146252b5ece0f76c3 = $(`<div id="html_7e7832132f59c9f146252b5ece0f76c3" style="width: 100.0%; height: 100.0%;">Connection: Chur - Zurich<br>Distance: 122 km<br>Tracks: 3<br>Time: 74</div>`)[0];
+                popup_ee9c494cd8ca8361229e29d21aa4951d.setContent(html_7e7832132f59c9f146252b5ece0f76c3);
+            
+        
+
+        poly_line_052930707bfc7d1c499fef8f36372807.bindPopup(popup_ee9c494cd8ca8361229e29d21aa4951d)
+        ;
+
+        
+    
+    
+            var poly_line_3d379d2d8a1b0f8febcb641aa3280814 = L.polyline(
+                [[47.546944, 7.59], [47.3641, 8.530788]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_875fd78ae3dd97b4f6a81f9905f9cf7b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_95bf1547331993efb82b32ab16e7bf9d = $(`<div id="html_95bf1547331993efb82b32ab16e7bf9d" style="width: 100.0%; height: 100.0%;">Connection: Basel - Zurich<br>Distance: 88 km<br>Tracks: 1<br>Time: 71</div>`)[0];
+                popup_875fd78ae3dd97b4f6a81f9905f9cf7b.setContent(html_95bf1547331993efb82b32ab16e7bf9d);
+            
+        
+
+        poly_line_3d379d2d8a1b0f8febcb641aa3280814.bindPopup(popup_875fd78ae3dd97b4f6a81f9905f9cf7b)
+        ;
+
+        
+    
+    
+            var poly_line_c5124ef62ba4a8ac717bbbfda74fdc27 = L.polyline(
+                [[47.39135, 8.051251], [47.3641, 8.530788]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_3cb4283f2e6a8470beb7598a3adea3ac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_72a13f142779997d7620d3fb042191b5 = $(`<div id="html_72a13f142779997d7620d3fb042191b5" style="width: 100.0%; height: 100.0%;">Connection: Aarau - Zurich<br>Distance: 47 km<br>Tracks: 4<br>Time: 29</div>`)[0];
+                popup_3cb4283f2e6a8470beb7598a3adea3ac.setContent(html_72a13f142779997d7620d3fb042191b5);
+            
+        
+
+        poly_line_c5124ef62ba4a8ac717bbbfda74fdc27.bindPopup(popup_3cb4283f2e6a8470beb7598a3adea3ac)
+        ;
+
+        
+    
+    
+            var poly_line_57818b9c951386d5788e56fea680be7f = L.polyline(
+                [[47.3641, 8.530788], [47.39135, 8.051251]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_45c7a4960bc9cd10e5f72f83b18c1040 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_79639e62d22620df43a2b8b02154cfa6 = $(`<div id="html_79639e62d22620df43a2b8b02154cfa6" style="width: 100.0%; height: 100.0%;">Connection: Zurich - Aarau<br>Distance: 47 km<br>Tracks: 4<br>Time: 29</div>`)[0];
+                popup_45c7a4960bc9cd10e5f72f83b18c1040.setContent(html_79639e62d22620df43a2b8b02154cfa6);
+            
+        
+
+        poly_line_57818b9c951386d5788e56fea680be7f.bindPopup(popup_45c7a4960bc9cd10e5f72f83b18c1040)
+        ;
+
+        
+    
+    
+            var poly_line_c9b4d3a06877fecfa3f64155fa5dfa5a = L.polyline(
+                [[47.35193, 7.907683], [47.39135, 8.051251]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_77bfa7faf0ba7f0a429537f78624da90 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2811d6ed90d1054c97d999798cd31966 = $(`<div id="html_2811d6ed90d1054c97d999798cd31966" style="width: 100.0%; height: 100.0%;">Connection: Olten - Aarau<br>Distance: 13 km<br>Tracks: 4<br>Time: 11</div>`)[0];
+                popup_77bfa7faf0ba7f0a429537f78624da90.setContent(html_2811d6ed90d1054c97d999798cd31966);
+            
+        
+
+        poly_line_c9b4d3a06877fecfa3f64155fa5dfa5a.bindPopup(popup_77bfa7faf0ba7f0a429537f78624da90)
+        ;
+
+        
+    
+    
+            var poly_line_4a56608c9a9b1cc8ed6f1b4375ccf820 = L.polyline(
+                [[47.484461, 7.731367], [47.39135, 8.051251]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_87e72ef27eb86a30833dafa1b25daf56 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_20cfe17d25286aff881deab88ec5d5e7 = $(`<div id="html_20cfe17d25286aff881deab88ec5d5e7" style="width: 100.0%; height: 100.0%;">Connection: Liestal - Aarau<br>Distance: 40 km<br>Tracks: 2<br>Time: 25</div>`)[0];
+                popup_87e72ef27eb86a30833dafa1b25daf56.setContent(html_20cfe17d25286aff881deab88ec5d5e7);
+            
+        
+
+        poly_line_4a56608c9a9b1cc8ed6f1b4375ccf820.bindPopup(popup_87e72ef27eb86a30833dafa1b25daf56)
+        ;
+
+        
+    
+    
+            var poly_line_07b4f01507c2317ecbb8ab2a0aceab46 = L.polyline(
+                [[47.173622, 8.51529], [47.049152, 8.549482]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_8c3a4f5393247b352ddd5bfc0ea5949b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_67075c02fbdfbef0b686b8d04f2bca3b = $(`<div id="html_67075c02fbdfbef0b686b8d04f2bca3b" style="width: 100.0%; height: 100.0%;">Connection: Zug - Arth-Goldau<br>Distance: 30 km<br>Tracks: 2<br>Time: 29</div>`)[0];
+                popup_8c3a4f5393247b352ddd5bfc0ea5949b.setContent(html_67075c02fbdfbef0b686b8d04f2bca3b);
+            
+        
+
+        poly_line_07b4f01507c2317ecbb8ab2a0aceab46.bindPopup(popup_8c3a4f5393247b352ddd5bfc0ea5949b)
+        ;
+
+        
+    
+    
+            var poly_line_7d4f1bcf8bfdee0319a5dcd11f513242 = L.polyline(
+                [[47.050169, 8.310161], [47.049152, 8.549482]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_234eb6f492a598a5699d4c5bc2273d04 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1d2612fa0401408faaaa51d513c9cbf7 = $(`<div id="html_1d2612fa0401408faaaa51d513c9cbf7" style="width: 100.0%; height: 100.0%;">Connection: Luzern - Arth-Goldau<br>Distance: 22 km<br>Tracks: 1<br>Time: 35</div>`)[0];
+                popup_234eb6f492a598a5699d4c5bc2273d04.setContent(html_1d2612fa0401408faaaa51d513c9cbf7);
+            
+        
+
+        poly_line_7d4f1bcf8bfdee0319a5dcd11f513242.bindPopup(popup_234eb6f492a598a5699d4c5bc2273d04)
+        ;
+
+        
+    
+    
+            var poly_line_f28d8e38220189d4360a8cca36bf0a19 = L.polyline(
+                [[46.19544, 9.029505], [47.049152, 8.549482]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_6067274ea6b905eaef922f2e63c9e888 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_01450e2f308deb3834e053a687e940d6 = $(`<div id="html_01450e2f308deb3834e053a687e940d6" style="width: 100.0%; height: 100.0%;">Connection: Bellinzona - Arth-Goldau<br>Distance: 100 km<br>Tracks: 2<br>Time: 52</div>`)[0];
+                popup_6067274ea6b905eaef922f2e63c9e888.setContent(html_01450e2f308deb3834e053a687e940d6);
+            
+        
+
+        poly_line_f28d8e38220189d4360a8cca36bf0a19.bindPopup(popup_6067274ea6b905eaef922f2e63c9e888)
+        ;
+
+        
+    
+    
+            var poly_line_727ba70869b04387cf884c240b4ca42d = L.polyline(
+                [[47.3641, 8.530788], [47.546944, 7.59]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_a54070fb2124e1c827ab18479581dc42 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_11c3b5baf72b24f7ce0edfbe5ea71026 = $(`<div id="html_11c3b5baf72b24f7ce0edfbe5ea71026" style="width: 100.0%; height: 100.0%;">Connection: Zurich - Basel<br>Distance: 88 km<br>Tracks: 1<br>Time: 71</div>`)[0];
+                popup_a54070fb2124e1c827ab18479581dc42.setContent(html_11c3b5baf72b24f7ce0edfbe5ea71026);
+            
+        
+
+        poly_line_727ba70869b04387cf884c240b4ca42d.bindPopup(popup_a54070fb2124e1c827ab18479581dc42)
+        ;
+
+        
+    
+    
+            var poly_line_95575b8c7326df025a630622f5f4782f = L.polyline(
+                [[47.484461, 7.731367], [47.546944, 7.59]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_5ede11012f963df322ab77d766c8eb12 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_46137f4f314224562cc3584a0ac5e05c = $(`<div id="html_46137f4f314224562cc3584a0ac5e05c" style="width: 100.0%; height: 100.0%;">Connection: Liestal - Basel<br>Distance: 15 km<br>Tracks: 4<br>Time: 9</div>`)[0];
+                popup_5ede11012f963df322ab77d766c8eb12.setContent(html_46137f4f314224562cc3584a0ac5e05c);
+            
+        
+
+        poly_line_95575b8c7326df025a630622f5f4782f.bindPopup(popup_5ede11012f963df322ab77d766c8eb12)
+        ;
+
+        
+    
+    
+            var poly_line_987dc937554d7f430139b680c0ee3e7b = L.polyline(
+                [[47.361996, 7.350065], [47.546944, 7.59]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_7ae28ca5ac08c9c55fc54cbb21967701 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c3e19871cf59b74df4a2995041b6bd3f = $(`<div id="html_c3e19871cf59b74df4a2995041b6bd3f" style="width: 100.0%; height: 100.0%;">Connection: Delemont - Basel<br>Distance: 45 km<br>Tracks: 1<br>Time: 40</div>`)[0];
+                popup_7ae28ca5ac08c9c55fc54cbb21967701.setContent(html_c3e19871cf59b74df4a2995041b6bd3f);
+            
+        
+
+        poly_line_987dc937554d7f430139b680c0ee3e7b.bindPopup(popup_7ae28ca5ac08c9c55fc54cbb21967701)
+        ;
+
+        
+    
+    
+            var poly_line_dc1bd6d7e01c50fe842d3c0184b0c479 = L.polyline(
+                [[46.00551, 8.946878], [46.19544, 9.029505]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_9002798078f83aa82f18af137c3d76fa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_227583e7e54d01dfcc196363637d0063 = $(`<div id="html_227583e7e54d01dfcc196363637d0063" style="width: 100.0%; height: 100.0%;">Connection: Lugano - Bellinzona<br>Distance: 29 km<br>Tracks: 2<br>Time: 27</div>`)[0];
+                popup_9002798078f83aa82f18af137c3d76fa.setContent(html_227583e7e54d01dfcc196363637d0063);
+            
+        
+
+        poly_line_dc1bd6d7e01c50fe842d3c0184b0c479.bindPopup(popup_9002798078f83aa82f18af137c3d76fa)
+        ;
+
+        
+    
+    
+            var poly_line_dabf6088405361a9cc0d7d2fb2333c17 = L.polyline(
+                [[47.049152, 8.549482], [46.19544, 9.029505]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_d269a74b9e67ba848cc4110a286c02fb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_83cb294df7de97db3cf0b5270502848b = $(`<div id="html_83cb294df7de97db3cf0b5270502848b" style="width: 100.0%; height: 100.0%;">Connection: Arth-Goldau - Bellinzona<br>Distance: 100 km<br>Tracks: 2<br>Time: 52</div>`)[0];
+                popup_d269a74b9e67ba848cc4110a286c02fb.setContent(html_83cb294df7de97db3cf0b5270502848b);
+            
+        
+
+        poly_line_dabf6088405361a9cc0d7d2fb2333c17.bindPopup(popup_d269a74b9e67ba848cc4110a286c02fb)
+        ;
+
+        
+    
+    
+            var poly_line_100c516e08a60d427a10ff003e904dc9 = L.polyline(
+                [[46.754853, 7.629606], [46.948819, 7.439117]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_5e387835311931e7ffde01a12bae8112 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_58491cfa50654f23ab9f3e731d6d65cb = $(`<div id="html_58491cfa50654f23ab9f3e731d6d65cb" style="width: 100.0%; height: 100.0%;">Connection: Thun - Bern<br>Distance: 30 km<br>Tracks: 3<br>Time: 18</div>`)[0];
+                popup_5e387835311931e7ffde01a12bae8112.setContent(html_58491cfa50654f23ab9f3e731d6d65cb);
+            
+        
+
+        poly_line_100c516e08a60d427a10ff003e904dc9.bindPopup(popup_5e387835311931e7ffde01a12bae8112)
+        ;
+
+        
+    
+    
+            var poly_line_733fd1455e5d8c3d7fcd2b59f4e73f7b = L.polyline(
+                [[47.204178, 7.542687], [46.948819, 7.439117]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_7fe567d520273c17b56da0b1f8fc1676 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_107a0da8ef27d69a5bb1ca810321185d = $(`<div id="html_107a0da8ef27d69a5bb1ca810321185d" style="width: 100.0%; height: 100.0%;">Connection: Solothurn - Bern<br>Distance: 43 km<br>Tracks: 1<br>Time: 37</div>`)[0];
+                popup_7fe567d520273c17b56da0b1f8fc1676.setContent(html_107a0da8ef27d69a5bb1ca810321185d);
+            
+        
+
+        poly_line_733fd1455e5d8c3d7fcd2b59f4e73f7b.bindPopup(popup_7fe567d520273c17b56da0b1f8fc1676)
+        ;
+
+        
+    
+    
+            var poly_line_4b6cdaef8a48fc0496295d5247f8dd38 = L.polyline(
+                [[47.35193, 7.907683], [46.948819, 7.439117]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_9d647b4602b388a2fccf8c711da72814 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4c9722d90965f48fa0084550d631fc71 = $(`<div id="html_4c9722d90965f48fa0084550d631fc71" style="width: 100.0%; height: 100.0%;">Connection: Olten - Bern<br>Distance: 60 km<br>Tracks: 4<br>Time: 26</div>`)[0];
+                popup_9d647b4602b388a2fccf8c711da72814.setContent(html_4c9722d90965f48fa0084550d631fc71);
+            
+        
+
+        poly_line_4b6cdaef8a48fc0496295d5247f8dd38.bindPopup(popup_9d647b4602b388a2fccf8c711da72814)
+        ;
+
+        
+    
+    
+            var poly_line_5e724a05490f15e78aaae1eefa2592fb = L.polyline(
+                [[46.996727, 6.935713], [46.948819, 7.439117]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_6f9124dd5e84b984421ca7b7c1583242 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_49d6dc798f2e270792e6d8b1c622e90f = $(`<div id="html_49d6dc798f2e270792e6d8b1c622e90f" style="width: 100.0%; height: 100.0%;">Connection: Neuchatel - Bern<br>Distance: 50 km<br>Tracks: 1<br>Time: 34</div>`)[0];
+                popup_6f9124dd5e84b984421ca7b7c1583242.setContent(html_49d6dc798f2e270792e6d8b1c622e90f);
+            
+        
+
+        poly_line_5e724a05490f15e78aaae1eefa2592fb.bindPopup(popup_6f9124dd5e84b984421ca7b7c1583242)
+        ;
+
+        
+    
+    
+            var poly_line_c9f770dad53f31412366f7851d8a7e6d = L.polyline(
+                [[47.050169, 8.310161], [46.948819, 7.439117]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_ad572d79f17eac72f85f494d447611f3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5d667c534715be958968130650fe9786 = $(`<div id="html_5d667c534715be958968130650fe9786" style="width: 100.0%; height: 100.0%;">Connection: Luzern - Bern<br>Distance: 106 km<br>Tracks: 2<br>Time: 61</div>`)[0];
+                popup_ad572d79f17eac72f85f494d447611f3.setContent(html_5d667c534715be958968130650fe9786);
+            
+        
+
+        poly_line_c9f770dad53f31412366f7851d8a7e6d.bindPopup(popup_ad572d79f17eac72f85f494d447611f3)
+        ;
+
+        
+    
+    
+            var poly_line_462efb23990e7c4db18cf1cf640e8a72 = L.polyline(
+                [[46.803269, 7.151031], [46.948819, 7.439117]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_07d9aa381fd16ee57c1403a85c8ca2fd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8343698c95f37bbd4c20a080f3dc2eba = $(`<div id="html_8343698c95f37bbd4c20a080f3dc2eba" style="width: 100.0%; height: 100.0%;">Connection: Fribourg - Bern<br>Distance: 32 km<br>Tracks: 2<br>Time: 21</div>`)[0];
+                popup_07d9aa381fd16ee57c1403a85c8ca2fd.setContent(html_8343698c95f37bbd4c20a080f3dc2eba);
+            
+        
+
+        poly_line_462efb23990e7c4db18cf1cf640e8a72.bindPopup(popup_07d9aa381fd16ee57c1403a85c8ca2fd)
+        ;
+
+        
+    
+    
+            var poly_line_258863282767ce0eaabf196b8a4f29bc = L.polyline(
+                [[47.132885, 7.242918], [46.948819, 7.439117]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_0c286554504d75f8e08631461a04cc82 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9b95275c0006e1497f8e363bd8de432a = $(`<div id="html_9b95275c0006e1497f8e363bd8de432a" style="width: 100.0%; height: 100.0%;">Connection: Biel/Bienne - Bern<br>Distance: 36 km<br>Tracks: 1<br>Time: 26</div>`)[0];
+                popup_0c286554504d75f8e08631461a04cc82.setContent(html_9b95275c0006e1497f8e363bd8de432a);
+            
+        
+
+        poly_line_258863282767ce0eaabf196b8a4f29bc.bindPopup(popup_0c286554504d75f8e08631461a04cc82)
+        ;
+
+        
+    
+    
+            var poly_line_ab2750a87f90fccab09c11a5f89a5c90 = L.polyline(
+                [[47.204178, 7.542687], [47.132885, 7.242918]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_1959ef80d1df8b67181bc11d18e5f8ab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c16b6628a8be7f9cb416a4fbcc3013e1 = $(`<div id="html_c16b6628a8be7f9cb416a4fbcc3013e1" style="width: 100.0%; height: 100.0%;">Connection: Solothurn - Biel/Bienne<br>Distance: 28 km<br>Tracks: 2<br>Time: 15</div>`)[0];
+                popup_1959ef80d1df8b67181bc11d18e5f8ab.setContent(html_c16b6628a8be7f9cb416a4fbcc3013e1);
+            
+        
+
+        poly_line_ab2750a87f90fccab09c11a5f89a5c90.bindPopup(popup_1959ef80d1df8b67181bc11d18e5f8ab)
+        ;
+
+        
+    
+    
+            var poly_line_e7cc4ed2dff9699fec974c5904a120de = L.polyline(
+                [[46.996727, 6.935713], [47.132885, 7.242918]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_a65d56a359f256750b18d3c162a26e6f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f80c929b08b8cbbf0e6ca3c3e2584934 = $(`<div id="html_f80c929b08b8cbbf0e6ca3c3e2584934" style="width: 100.0%; height: 100.0%;">Connection: Neuchatel - Biel/Bienne<br>Distance: 32 km<br>Tracks: 2<br>Time: 16</div>`)[0];
+                popup_a65d56a359f256750b18d3c162a26e6f.setContent(html_f80c929b08b8cbbf0e6ca3c3e2584934);
+            
+        
+
+        poly_line_e7cc4ed2dff9699fec974c5904a120de.bindPopup(popup_a65d56a359f256750b18d3c162a26e6f)
+        ;
+
+        
+    
+    
+            var poly_line_03c8aabd155a8560825a456feec669dc = L.polyline(
+                [[47.361996, 7.350065], [47.132885, 7.242918]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_182aeeef5097666d86587ff5f584e2d2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a08dcfaf88362a1342276ca57fd54ffb = $(`<div id="html_a08dcfaf88362a1342276ca57fd54ffb" style="width: 100.0%; height: 100.0%;">Connection: Delemont - Biel/Bienne<br>Distance: 35 km<br>Tracks: 1<br>Time: 29</div>`)[0];
+                popup_182aeeef5097666d86587ff5f584e2d2.setContent(html_a08dcfaf88362a1342276ca57fd54ffb);
+            
+        
+
+        poly_line_03c8aabd155a8560825a456feec669dc.bindPopup(popup_182aeeef5097666d86587ff5f584e2d2)
+        ;
+
+        
+    
+    
+            var poly_line_1f616300a833bc60101bd228ddef5bf2 = L.polyline(
+                [[46.948819, 7.439117], [47.132885, 7.242918]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_cb0a754fd2bbf12279438284adbbb1d7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b4c1d339f82fb35fca1ab01190bfb701 = $(`<div id="html_b4c1d339f82fb35fca1ab01190bfb701" style="width: 100.0%; height: 100.0%;">Connection: Bern - Biel/Bienne<br>Distance: 36 km<br>Tracks: 1<br>Time: 26</div>`)[0];
+                popup_cb0a754fd2bbf12279438284adbbb1d7.setContent(html_b4c1d339f82fb35fca1ab01190bfb701);
+            
+        
+
+        poly_line_1f616300a833bc60101bd228ddef5bf2.bindPopup(popup_cb0a754fd2bbf12279438284adbbb1d7)
+        ;
+
+        
+    
+    
+            var poly_line_0b35617ae8831ac6baf8174ec9e3b8c9 = L.polyline(
+                [[46.293889, 7.881389], [46.319444, 7.988056]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_3a5eb3133e2d1e79d8ff5331e87570cb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_21cbbe5a36f15608344b019a7b744660 = $(`<div id="html_21cbbe5a36f15608344b019a7b744660" style="width: 100.0%; height: 100.0%;">Connection: Visp - Brig<br>Distance: 9 km<br>Tracks: 2<br>Time: 6</div>`)[0];
+                popup_3a5eb3133e2d1e79d8ff5331e87570cb.setContent(html_21cbbe5a36f15608344b019a7b744660);
+            
+        
+
+        poly_line_0b35617ae8831ac6baf8174ec9e3b8c9.bindPopup(popup_3a5eb3133e2d1e79d8ff5331e87570cb)
+        ;
+
+        
+    
+    
+            var poly_line_27abcb7a7a4ccd84ec02e7217260ef7f = L.polyline(
+                [[46.85308, 9.528919], [46.319444, 7.988056]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_c12873419cbb02d57379445e81ceaa1a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6d0a42e8648f06fd4490c478600c7b0e = $(`<div id="html_6d0a42e8648f06fd4490c478600c7b0e" style="width: 100.0%; height: 100.0%;">Connection: Chur - Brig<br>Distance: 161 km<br>Tracks: 1<br>Time: 243</div>`)[0];
+                popup_c12873419cbb02d57379445e81ceaa1a.setContent(html_6d0a42e8648f06fd4490c478600c7b0e);
+            
+        
+
+        poly_line_27abcb7a7a4ccd84ec02e7217260ef7f.bindPopup(popup_c12873419cbb02d57379445e81ceaa1a)
+        ;
+
+        
+    
+    
+            var poly_line_2f0bc2ebcfa1d9eb71dabde4977ed6e1 = L.polyline(
+                [[46.00551, 8.946878], [45.83219, 9.031449]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_24d6631336edc11fff736b8fbe594d35 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2c96d052a80d72f3ceb5cc1f2da01dd2 = $(`<div id="html_2c96d052a80d72f3ceb5cc1f2da01dd2" style="width: 100.0%; height: 100.0%;">Connection: Lugano - Chiasso<br>Distance: 25 km<br>Tracks: 2<br>Time: 25</div>`)[0];
+                popup_24d6631336edc11fff736b8fbe594d35.setContent(html_2c96d052a80d72f3ceb5cc1f2da01dd2);
+            
+        
+
+        poly_line_2f0bc2ebcfa1d9eb71dabde4977ed6e1.bindPopup(popup_24d6631336edc11fff736b8fbe594d35)
+        ;
+
+        
+    
+    
+            var poly_line_cdeb9edd94af7f94dbc44672b69d30e7 = L.polyline(
+                [[47.3641, 8.530788], [46.85308, 9.528919]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_3eb2eeff4ada70ba538064f3eeaed249 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_78aa8538639e61a91138b75e33fac5df = $(`<div id="html_78aa8538639e61a91138b75e33fac5df" style="width: 100.0%; height: 100.0%;">Connection: Zurich - Chur<br>Distance: 122 km<br>Tracks: 3<br>Time: 74</div>`)[0];
+                popup_3eb2eeff4ada70ba538064f3eeaed249.setContent(html_78aa8538639e61a91138b75e33fac5df);
+            
+        
+
+        poly_line_cdeb9edd94af7f94dbc44672b69d30e7.bindPopup(popup_3eb2eeff4ada70ba538064f3eeaed249)
+        ;
+
+        
+    
+    
+            var poly_line_5cb741a20aa6711b3c24608728abd55b = L.polyline(
+                [[47.423183, 9.369873], [46.85308, 9.528919]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_e39cb18358464c5a84468715a9145940 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2de95b7551b0f57819fea809afedf7e5 = $(`<div id="html_2de95b7551b0f57819fea809afedf7e5" style="width: 100.0%; height: 100.0%;">Connection: St.Gallen - Chur<br>Distance: 107 km<br>Tracks: 2<br>Time: 83</div>`)[0];
+                popup_e39cb18358464c5a84468715a9145940.setContent(html_2de95b7551b0f57819fea809afedf7e5);
+            
+        
+
+        poly_line_5cb741a20aa6711b3c24608728abd55b.bindPopup(popup_e39cb18358464c5a84468715a9145940)
+        ;
+
+        
+    
+    
+            var poly_line_f0e793209a2190be485233e20ce766b0 = L.polyline(
+                [[46.319444, 7.988056], [46.85308, 9.528919]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_5f14ef20e1010009fc7e6230d076c70e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6cecfb74e9b0245aa578f5fe0be241ae = $(`<div id="html_6cecfb74e9b0245aa578f5fe0be241ae" style="width: 100.0%; height: 100.0%;">Connection: Brig - Chur<br>Distance: 161 km<br>Tracks: 1<br>Time: 243</div>`)[0];
+                popup_5f14ef20e1010009fc7e6230d076c70e.setContent(html_6cecfb74e9b0245aa578f5fe0be241ae);
+            
+        
+
+        poly_line_f0e793209a2190be485233e20ce766b0.bindPopup(popup_5f14ef20e1010009fc7e6230d076c70e)
+        ;
+
+        
+    
+    
+            var poly_line_ba4856903ec116d03e5441fcc847ec21 = L.polyline(
+                [[47.132885, 7.242918], [47.361996, 7.350065]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_40128173049c7d5cbbb8fe9ac3fe8d64 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3c05ca0eb7178c8c91600f41439c7365 = $(`<div id="html_3c05ca0eb7178c8c91600f41439c7365" style="width: 100.0%; height: 100.0%;">Connection: Biel/Bienne - Delemont<br>Distance: 35 km<br>Tracks: 1<br>Time: 29</div>`)[0];
+                popup_40128173049c7d5cbbb8fe9ac3fe8d64.setContent(html_3c05ca0eb7178c8c91600f41439c7365);
+            
+        
+
+        poly_line_ba4856903ec116d03e5441fcc847ec21.bindPopup(popup_40128173049c7d5cbbb8fe9ac3fe8d64)
+        ;
+
+        
+    
+    
+            var poly_line_2656aa02181040db6129e0948bccf207 = L.polyline(
+                [[47.546944, 7.59], [47.361996, 7.350065]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_d0f6fef81198b22dbc4af6e8acc16414 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_296ca3c32811250406d75e4d593cbc25 = $(`<div id="html_296ca3c32811250406d75e4d593cbc25" style="width: 100.0%; height: 100.0%;">Connection: Basel - Delemont<br>Distance: 45 km<br>Tracks: 1<br>Time: 40</div>`)[0];
+                popup_d0f6fef81198b22dbc4af6e8acc16414.setContent(html_296ca3c32811250406d75e4d593cbc25);
+            
+        
+
+        poly_line_2656aa02181040db6129e0948bccf207.bindPopup(popup_d0f6fef81198b22dbc4af6e8acc16414)
+        ;
+
+        
+    
+    
+            var poly_line_93263bc1d2e7a9aed8fe219accd8fcbd = L.polyline(
+                [[46.69351, 6.911815], [46.803269, 7.151031]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_ad3f0841228f4278d73d03da4427eae7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3b82a1d85ce8065e465ca30590767f1c = $(`<div id="html_3b82a1d85ce8065e465ca30590767f1c" style="width: 100.0%; height: 100.0%;">Connection: Romont - Fribourg<br>Distance: 25 km<br>Tracks: 2<br>Time: 17</div>`)[0];
+                popup_ad3f0841228f4278d73d03da4427eae7.setContent(html_3b82a1d85ce8065e465ca30590767f1c);
+            
+        
+
+        poly_line_93263bc1d2e7a9aed8fe219accd8fcbd.bindPopup(popup_ad3f0841228f4278d73d03da4427eae7)
+        ;
+
+        
+    
+    
+            var poly_line_e207a2c40a5b2ecf6e4b34a8b174f231 = L.polyline(
+                [[46.948819, 7.439117], [46.803269, 7.151031]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_6799891d78ce4c13a47bc41baaf8d0a8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d669df1f4ebfdd154e119c5fd0512699 = $(`<div id="html_d669df1f4ebfdd154e119c5fd0512699" style="width: 100.0%; height: 100.0%;">Connection: Bern - Fribourg<br>Distance: 32 km<br>Tracks: 2<br>Time: 21</div>`)[0];
+                popup_6799891d78ce4c13a47bc41baaf8d0a8.setContent(html_d669df1f4ebfdd154e119c5fd0512699);
+            
+        
+
+        poly_line_e207a2c40a5b2ecf6e4b34a8b174f231.bindPopup(popup_6799891d78ce4c13a47bc41baaf8d0a8)
+        ;
+
+        
+    
+    
+            var poly_line_b8bab488f99f4d92bc8b88f934868c96 = L.polyline(
+                [[46.516785, 6.629096], [46.210217, 6.142447]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_18f51fd35d8cbc990f5a384f1c20c5e9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8c573f5072b1bcaaee708a1ba298266d = $(`<div id="html_8c573f5072b1bcaaee708a1ba298266d" style="width: 100.0%; height: 100.0%;">Connection: Lausanne - Geneve<br>Distance: 60 km<br>Tracks: 4<br>Time: 36</div>`)[0];
+                popup_18f51fd35d8cbc990f5a384f1c20c5e9.setContent(html_8c573f5072b1bcaaee708a1ba298266d);
+            
+        
+
+        poly_line_b8bab488f99f4d92bc8b88f934868c96.bindPopup(popup_18f51fd35d8cbc990f5a384f1c20c5e9)
+        ;
+
+        
+    
+    
+            var poly_line_9abbe069eee54d60cc1d703ece9056c5 = L.polyline(
+                [[46.754853, 7.629606], [46.69, 7.868889]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_3b017338aa81243c7ae51c593d64a8c7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_10d8cd446795f1b4e344f14eccd7e123 = $(`<div id="html_10d8cd446795f1b4e344f14eccd7e123" style="width: 100.0%; height: 100.0%;">Connection: Thun - Interlaken<br>Distance: 28 km<br>Tracks: 2<br>Time: 32</div>`)[0];
+                popup_3b017338aa81243c7ae51c593d64a8c7.setContent(html_10d8cd446795f1b4e344f14eccd7e123);
+            
+        
+
+        poly_line_9abbe069eee54d60cc1d703ece9056c5.bindPopup(popup_3b017338aa81243c7ae51c593d64a8c7)
+        ;
+
+        
+    
+    
+            var poly_line_40b17edf2dead37036295d43acbba78a = L.polyline(
+                [[47.050169, 8.310161], [46.69, 7.868889]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_f9e68ab258c819bd73fde53496ad73e7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_62592f14642d3cb4c2086056f603fac1 = $(`<div id="html_62592f14642d3cb4c2086056f603fac1" style="width: 100.0%; height: 100.0%;">Connection: Luzern - Interlaken<br>Distance: 72 km<br>Tracks: 1<br>Time: 111</div>`)[0];
+                popup_f9e68ab258c819bd73fde53496ad73e7.setContent(html_62592f14642d3cb4c2086056f603fac1);
+            
+        
+
+        poly_line_40b17edf2dead37036295d43acbba78a.bindPopup(popup_f9e68ab258c819bd73fde53496ad73e7)
+        ;
+
+        
+    
+    
+            var poly_line_32b57408f60464fc6a8ac1d134bc6e60 = L.polyline(
+                [[47.500328, 8.723786], [47.658754, 9.177312]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_75eb7069f636e36c453bffe115dbea27 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d91f580a60f3faa809ce30d1c5dafe4b = $(`<div id="html_d91f580a60f3faa809ce30d1c5dafe4b" style="width: 100.0%; height: 100.0%;">Connection: Winterthur - Konstanz<br>Distance: 54 km<br>Tracks: 2<br>Time: 50</div>`)[0];
+                popup_75eb7069f636e36c453bffe115dbea27.setContent(html_d91f580a60f3faa809ce30d1c5dafe4b);
+            
+        
+
+        poly_line_32b57408f60464fc6a8ac1d134bc6e60.bindPopup(popup_75eb7069f636e36c453bffe115dbea27)
+        ;
+
+        
+    
+    
+            var poly_line_5681cb266b8ae4195a22b88a06ae1dd3 = L.polyline(
+                [[47.565556, 9.379444], [47.658754, 9.177312]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_df4bc825b3a292f0e1aacb7a3b68e3ba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e0c9f7d29d7cf028e27d74d9ea52bfc2 = $(`<div id="html_e0c9f7d29d7cf028e27d74d9ea52bfc2" style="width: 100.0%; height: 100.0%;">Connection: Romanshorn - Konstanz<br>Distance: 20 km<br>Tracks: 1<br>Time: 16</div>`)[0];
+                popup_df4bc825b3a292f0e1aacb7a3b68e3ba.setContent(html_e0c9f7d29d7cf028e27d74d9ea52bfc2);
+            
+        
+
+        poly_line_5681cb266b8ae4195a22b88a06ae1dd3.bindPopup(popup_df4bc825b3a292f0e1aacb7a3b68e3ba)
+        ;
+
+        
+    
+    
+            var poly_line_be1cabcf07c9de8fa2d59564ec4daf3c = L.polyline(
+                [[46.781876, 6.641153], [46.516785, 6.629096]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_470bcfe29e3c027e6ac611308125ddfd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_faca40422c58b047196e79f947fce502 = $(`<div id="html_faca40422c58b047196e79f947fce502" style="width: 100.0%; height: 100.0%;">Connection: Yverdon-les-Bains - Lausanne<br>Distance: 39 km<br>Tracks: 2<br>Time: 22</div>`)[0];
+                popup_470bcfe29e3c027e6ac611308125ddfd.setContent(html_faca40422c58b047196e79f947fce502);
+            
+        
+
+        poly_line_be1cabcf07c9de8fa2d59564ec4daf3c.bindPopup(popup_470bcfe29e3c027e6ac611308125ddfd)
+        ;
+
+        
+    
+    
+            var poly_line_0eba00998cc46727bb4bb1218d789b72 = L.polyline(
+                [[46.69351, 6.911815], [46.516785, 6.629096]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_70b12ff11e0f81821d722728502e319c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4a75dcc892e30a6b1a832e2caf91d977 = $(`<div id="html_4a75dcc892e30a6b1a832e2caf91d977" style="width: 100.0%; height: 100.0%;">Connection: Romont - Lausanne<br>Distance: 40 km<br>Tracks: 2<br>Time: 31</div>`)[0];
+                popup_70b12ff11e0f81821d722728502e319c.setContent(html_4a75dcc892e30a6b1a832e2caf91d977);
+            
+        
+
+        poly_line_0eba00998cc46727bb4bb1218d789b72.bindPopup(popup_70b12ff11e0f81821d722728502e319c)
+        ;
+
+        
+    
+    
+            var poly_line_b5b1708f4f60c662c12637f75373966f = L.polyline(
+                [[46.435875, 6.910434], [46.516785, 6.629096]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_1bcacc74b07f49f80813003f4c7cbf97 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_996b00c374c99f5ba726aea89f0102c5 = $(`<div id="html_996b00c374c99f5ba726aea89f0102c5" style="width: 100.0%; height: 100.0%;">Connection: Montreux - Lausanne<br>Distance: 25 km<br>Tracks: 2<br>Time: 21</div>`)[0];
+                popup_1bcacc74b07f49f80813003f4c7cbf97.setContent(html_996b00c374c99f5ba726aea89f0102c5);
+            
+        
+
+        poly_line_b5b1708f4f60c662c12637f75373966f.bindPopup(popup_1bcacc74b07f49f80813003f4c7cbf97)
+        ;
+
+        
+    
+    
+            var poly_line_fdea6cf62d9c06b9d9abdf432dc5084a = L.polyline(
+                [[46.210217, 6.142447], [46.516785, 6.629096]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_1d2ebc0546c58a9ffd0f716b1f263b9b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_59f1abc81eb6be943b065930ea95b87f = $(`<div id="html_59f1abc81eb6be943b065930ea95b87f" style="width: 100.0%; height: 100.0%;">Connection: Geneve - Lausanne<br>Distance: 60 km<br>Tracks: 4<br>Time: 36</div>`)[0];
+                popup_1d2ebc0546c58a9ffd0f716b1f263b9b.setContent(html_59f1abc81eb6be943b065930ea95b87f);
+            
+        
+
+        poly_line_fdea6cf62d9c06b9d9abdf432dc5084a.bindPopup(popup_1d2ebc0546c58a9ffd0f716b1f263b9b)
+        ;
+
+        
+    
+    
+            var poly_line_ef0d377edf8af7b5dfaee0e46571bf7d = L.polyline(
+                [[47.35193, 7.907683], [47.484461, 7.731367]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_da2c66ea086cc6a2f6a5541228b0800d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c83aef4419441997e709029cde97c81a = $(`<div id="html_c83aef4419441997e709029cde97c81a" style="width: 100.0%; height: 100.0%;">Connection: Olten - Liestal<br>Distance: 30 km<br>Tracks: 4<br>Time: 16</div>`)[0];
+                popup_da2c66ea086cc6a2f6a5541228b0800d.setContent(html_c83aef4419441997e709029cde97c81a);
+            
+        
+
+        poly_line_ef0d377edf8af7b5dfaee0e46571bf7d.bindPopup(popup_da2c66ea086cc6a2f6a5541228b0800d)
+        ;
+
+        
+    
+    
+            var poly_line_d2ccfbc62f1477526c6bb1d73b9edf00 = L.polyline(
+                [[47.546944, 7.59], [47.484461, 7.731367]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_1bc776e490a55a0ea963117af75f1b73 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0817539b1ac9be03ff500c8a508125d8 = $(`<div id="html_0817539b1ac9be03ff500c8a508125d8" style="width: 100.0%; height: 100.0%;">Connection: Basel - Liestal<br>Distance: 15 km<br>Tracks: 4<br>Time: 9</div>`)[0];
+                popup_1bc776e490a55a0ea963117af75f1b73.setContent(html_0817539b1ac9be03ff500c8a508125d8);
+            
+        
+
+        poly_line_d2ccfbc62f1477526c6bb1d73b9edf00.bindPopup(popup_1bc776e490a55a0ea963117af75f1b73)
+        ;
+
+        
+    
+    
+            var poly_line_a09c612fa0c74986b750cf93f8ff8da5 = L.polyline(
+                [[47.39135, 8.051251], [47.484461, 7.731367]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_0395a0af1a72d77d619fb7349aa643d1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b19090dc750531de05d7158ba630c82e = $(`<div id="html_b19090dc750531de05d7158ba630c82e" style="width: 100.0%; height: 100.0%;">Connection: Aarau - Liestal<br>Distance: 40 km<br>Tracks: 2<br>Time: 25</div>`)[0];
+                popup_0395a0af1a72d77d619fb7349aa643d1.setContent(html_b19090dc750531de05d7158ba630c82e);
+            
+        
+
+        poly_line_a09c612fa0c74986b750cf93f8ff8da5.bindPopup(popup_0395a0af1a72d77d619fb7349aa643d1)
+        ;
+
+        
+    
+    
+            var poly_line_a47ced34549e03bc4d381ee28ad3a63e = L.polyline(
+                [[47.173622, 8.51529], [47.050169, 8.310161]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_687328ac802ccdd8353a583f7e12ef84 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d60ebc028e96cf29d9fcbb2f22cb157a = $(`<div id="html_d60ebc028e96cf29d9fcbb2f22cb157a" style="width: 100.0%; height: 100.0%;">Connection: Zug - Luzern<br>Distance: 30 km<br>Tracks: 2<br>Time: 20</div>`)[0];
+                popup_687328ac802ccdd8353a583f7e12ef84.setContent(html_d60ebc028e96cf29d9fcbb2f22cb157a);
+            
+        
+
+        poly_line_a47ced34549e03bc4d381ee28ad3a63e.bindPopup(popup_687328ac802ccdd8353a583f7e12ef84)
+        ;
+
+        
+    
+    
+            var poly_line_6336873e910a17f50a3caf4ccc23ffb6 = L.polyline(
+                [[47.35193, 7.907683], [47.050169, 8.310161]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_59977a53fbe7ac13d33dde23762f15fd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1fc9c5aa4221a457eabe3b7bb8cf31e5 = $(`<div id="html_1fc9c5aa4221a457eabe3b7bb8cf31e5" style="width: 100.0%; height: 100.0%;">Connection: Olten - Luzern<br>Distance: 55 km<br>Tracks: 3<br>Time: 33</div>`)[0];
+                popup_59977a53fbe7ac13d33dde23762f15fd.setContent(html_1fc9c5aa4221a457eabe3b7bb8cf31e5);
+            
+        
+
+        poly_line_6336873e910a17f50a3caf4ccc23ffb6.bindPopup(popup_59977a53fbe7ac13d33dde23762f15fd)
+        ;
+
+        
+    
+    
+            var poly_line_23d5c9a248921402eb320dd29f9df405 = L.polyline(
+                [[46.69, 7.868889], [47.050169, 8.310161]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_86202d6081017ab6cce964f0a90d8f4b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_faf996a62608dc5508cb46f77ddd0554 = $(`<div id="html_faf996a62608dc5508cb46f77ddd0554" style="width: 100.0%; height: 100.0%;">Connection: Interlaken - Luzern<br>Distance: 72 km<br>Tracks: 1<br>Time: 111</div>`)[0];
+                popup_86202d6081017ab6cce964f0a90d8f4b.setContent(html_faf996a62608dc5508cb46f77ddd0554);
+            
+        
+
+        poly_line_23d5c9a248921402eb320dd29f9df405.bindPopup(popup_86202d6081017ab6cce964f0a90d8f4b)
+        ;
+
+        
+    
+    
+            var poly_line_800986dfee85e702cc8703e0ee11c7b1 = L.polyline(
+                [[46.948819, 7.439117], [47.050169, 8.310161]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_0cb04dc99b1808be120a039b62b8824e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bc1f0e118c82adbe2a8aab0abd90f007 = $(`<div id="html_bc1f0e118c82adbe2a8aab0abd90f007" style="width: 100.0%; height: 100.0%;">Connection: Bern - Luzern<br>Distance: 106 km<br>Tracks: 2<br>Time: 61</div>`)[0];
+                popup_0cb04dc99b1808be120a039b62b8824e.setContent(html_bc1f0e118c82adbe2a8aab0abd90f007);
+            
+        
+
+        poly_line_800986dfee85e702cc8703e0ee11c7b1.bindPopup(popup_0cb04dc99b1808be120a039b62b8824e)
+        ;
+
+        
+    
+    
+            var poly_line_04fafcaff1e3265554ba1a65a4147774 = L.polyline(
+                [[47.049152, 8.549482], [47.050169, 8.310161]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_d703905b146d4107cf20d1eaa4bfc66a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0bffd2ee12421f2ee3557947d533714c = $(`<div id="html_0bffd2ee12421f2ee3557947d533714c" style="width: 100.0%; height: 100.0%;">Connection: Arth-Goldau - Luzern<br>Distance: 22 km<br>Tracks: 1<br>Time: 35</div>`)[0];
+                popup_d703905b146d4107cf20d1eaa4bfc66a.setContent(html_0bffd2ee12421f2ee3557947d533714c);
+            
+        
+
+        poly_line_04fafcaff1e3265554ba1a65a4147774.bindPopup(popup_d703905b146d4107cf20d1eaa4bfc66a)
+        ;
+
+        
+    
+    
+            var poly_line_84365c114ee6374e03e1e7211ec3ec10 = L.polyline(
+                [[45.83219, 9.031449], [46.00551, 8.946878]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_0203e7f566a17b69973c22a59e8741ce = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b425fa37d3eacdd66ed8dd3344880117 = $(`<div id="html_b425fa37d3eacdd66ed8dd3344880117" style="width: 100.0%; height: 100.0%;">Connection: Chiasso - Lugano<br>Distance: 25 km<br>Tracks: 2<br>Time: 25</div>`)[0];
+                popup_0203e7f566a17b69973c22a59e8741ce.setContent(html_b425fa37d3eacdd66ed8dd3344880117);
+            
+        
+
+        poly_line_84365c114ee6374e03e1e7211ec3ec10.bindPopup(popup_0203e7f566a17b69973c22a59e8741ce)
+        ;
+
+        
+    
+    
+            var poly_line_1dd19abfc60a1567eeb4817c92db4db3 = L.polyline(
+                [[46.19544, 9.029505], [46.00551, 8.946878]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_d59a3d442b149a0cf993b0d5a213f8b0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_032426ff5f403ce341734d0d1c3ae59a = $(`<div id="html_032426ff5f403ce341734d0d1c3ae59a" style="width: 100.0%; height: 100.0%;">Connection: Bellinzona - Lugano<br>Distance: 29 km<br>Tracks: 2<br>Time: 27</div>`)[0];
+                popup_d59a3d442b149a0cf993b0d5a213f8b0.setContent(html_032426ff5f403ce341734d0d1c3ae59a);
+            
+        
+
+        poly_line_1dd19abfc60a1567eeb4817c92db4db3.bindPopup(popup_d59a3d442b149a0cf993b0d5a213f8b0)
+        ;
+
+        
+    
+    
+            var poly_line_26e71a15d96d6bef318985630075c566 = L.polyline(
+                [[46.754853, 7.629606], [46.435875, 6.910434]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_e61a447c0a33af3f82213865ce652cad = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7743504a390b44f23fac243cda556bd1 = $(`<div id="html_7743504a390b44f23fac243cda556bd1" style="width: 100.0%; height: 100.0%;">Connection: Thun - Montreux<br>Distance: 95 km<br>Tracks: 1<br>Time: 170</div>`)[0];
+                popup_e61a447c0a33af3f82213865ce652cad.setContent(html_7743504a390b44f23fac243cda556bd1);
+            
+        
+
+        poly_line_26e71a15d96d6bef318985630075c566.bindPopup(popup_e61a447c0a33af3f82213865ce652cad)
+        ;
+
+        
+    
+    
+            var poly_line_045f41fec1b3232798bb034cb19ec3fe = L.polyline(
+                [[46.227553, 7.359197], [46.435875, 6.910434]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_15b00d151f88531f86ebe4610fa8f760 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fa13f7831805a11296f51498c36f7984 = $(`<div id="html_fa13f7831805a11296f51498c36f7984" style="width: 100.0%; height: 100.0%;">Connection: Sion - Montreux<br>Distance: 67 km<br>Tracks: 2<br>Time: 34</div>`)[0];
+                popup_15b00d151f88531f86ebe4610fa8f760.setContent(html_fa13f7831805a11296f51498c36f7984);
+            
+        
+
+        poly_line_045f41fec1b3232798bb034cb19ec3fe.bindPopup(popup_15b00d151f88531f86ebe4610fa8f760)
+        ;
+
+        
+    
+    
+            var poly_line_d18e0d764b4ad962241008b57ed73968 = L.polyline(
+                [[46.516785, 6.629096], [46.435875, 6.910434]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_adf8720c98787b1653a94b4dbe9fee8b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5841305345581b0ba6c2aa979829b36a = $(`<div id="html_5841305345581b0ba6c2aa979829b36a" style="width: 100.0%; height: 100.0%;">Connection: Lausanne - Montreux<br>Distance: 25 km<br>Tracks: 2<br>Time: 21</div>`)[0];
+                popup_adf8720c98787b1653a94b4dbe9fee8b.setContent(html_5841305345581b0ba6c2aa979829b36a);
+            
+        
+
+        poly_line_d18e0d764b4ad962241008b57ed73968.bindPopup(popup_adf8720c98787b1653a94b4dbe9fee8b)
+        ;
+
+        
+    
+    
+            var poly_line_c75afd18d4b39e215f92be0a39f3f952 = L.polyline(
+                [[46.781876, 6.641153], [46.996727, 6.935713]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_a40436220072b81ffafdd6c55a5044d3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_112a6279ab1cacc872cf9180bbfe74cd = $(`<div id="html_112a6279ab1cacc872cf9180bbfe74cd" style="width: 100.0%; height: 100.0%;">Connection: Yverdon-les-Bains - Neuchatel<br>Distance: 40 km<br>Tracks: 2<br>Time: 17</div>`)[0];
+                popup_a40436220072b81ffafdd6c55a5044d3.setContent(html_112a6279ab1cacc872cf9180bbfe74cd);
+            
+        
+
+        poly_line_c75afd18d4b39e215f92be0a39f3f952.bindPopup(popup_a40436220072b81ffafdd6c55a5044d3)
+        ;
+
+        
+    
+    
+            var poly_line_437bdcfd5328dd9da67e16893bba6bb3 = L.polyline(
+                [[47.132885, 7.242918], [46.996727, 6.935713]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_326f4920c16d904021f3742a1ddbe0a6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_95f9a39c07f36a4cacbb0663439663a8 = $(`<div id="html_95f9a39c07f36a4cacbb0663439663a8" style="width: 100.0%; height: 100.0%;">Connection: Biel/Bienne - Neuchatel<br>Distance: 32 km<br>Tracks: 2<br>Time: 16</div>`)[0];
+                popup_326f4920c16d904021f3742a1ddbe0a6.setContent(html_95f9a39c07f36a4cacbb0663439663a8);
+            
+        
+
+        poly_line_437bdcfd5328dd9da67e16893bba6bb3.bindPopup(popup_326f4920c16d904021f3742a1ddbe0a6)
+        ;
+
+        
+    
+    
+            var poly_line_b0b52c20e47cc92a386c26eb2b8e45ce = L.polyline(
+                [[46.948819, 7.439117], [46.996727, 6.935713]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_730d96320a6c5d25f388c1026b10e14e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eb67506ef3a0be9a4664517c0dbac88a = $(`<div id="html_eb67506ef3a0be9a4664517c0dbac88a" style="width: 100.0%; height: 100.0%;">Connection: Bern - Neuchatel<br>Distance: 50 km<br>Tracks: 1<br>Time: 34</div>`)[0];
+                popup_730d96320a6c5d25f388c1026b10e14e.setContent(html_eb67506ef3a0be9a4664517c0dbac88a);
+            
+        
+
+        poly_line_b0b52c20e47cc92a386c26eb2b8e45ce.bindPopup(popup_730d96320a6c5d25f388c1026b10e14e)
+        ;
+
+        
+    
+    
+            var poly_line_096faa396015dd19c6d6d3288daeadbe = L.polyline(
+                [[47.204178, 7.542687], [47.35193, 7.907683]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_22e430be63f5aad98ff9cc5a74415d9d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_de0ed7456fcfea42c2b28a67a04ff5e5 = $(`<div id="html_de0ed7456fcfea42c2b28a67a04ff5e5" style="width: 100.0%; height: 100.0%;">Connection: Solothurn - Olten<br>Distance: 38 km<br>Tracks: 2<br>Time: 16</div>`)[0];
+                popup_22e430be63f5aad98ff9cc5a74415d9d.setContent(html_de0ed7456fcfea42c2b28a67a04ff5e5);
+            
+        
+
+        poly_line_096faa396015dd19c6d6d3288daeadbe.bindPopup(popup_22e430be63f5aad98ff9cc5a74415d9d)
+        ;
+
+        
+    
+    
+            var poly_line_1856eef15a74a11250333cc0f01f79f8 = L.polyline(
+                [[47.050169, 8.310161], [47.35193, 7.907683]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_59bd7ba2415e3b658aebdd6b4b09f8f4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_56064523ed011f9548bb6aae19814eeb = $(`<div id="html_56064523ed011f9548bb6aae19814eeb" style="width: 100.0%; height: 100.0%;">Connection: Luzern - Olten<br>Distance: 55 km<br>Tracks: 3<br>Time: 33</div>`)[0];
+                popup_59bd7ba2415e3b658aebdd6b4b09f8f4.setContent(html_56064523ed011f9548bb6aae19814eeb);
+            
+        
+
+        poly_line_1856eef15a74a11250333cc0f01f79f8.bindPopup(popup_59bd7ba2415e3b658aebdd6b4b09f8f4)
+        ;
+
+        
+    
+    
+            var poly_line_bbe7d537b8d4c2a1ab2dd736dedf44eb = L.polyline(
+                [[47.484461, 7.731367], [47.35193, 7.907683]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_332166a05d15c4b529ce57a93972300b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b887f34f7f842a9b88bd671530d95be8 = $(`<div id="html_b887f34f7f842a9b88bd671530d95be8" style="width: 100.0%; height: 100.0%;">Connection: Liestal - Olten<br>Distance: 30 km<br>Tracks: 4<br>Time: 16</div>`)[0];
+                popup_332166a05d15c4b529ce57a93972300b.setContent(html_b887f34f7f842a9b88bd671530d95be8);
+            
+        
+
+        poly_line_bbe7d537b8d4c2a1ab2dd736dedf44eb.bindPopup(popup_332166a05d15c4b529ce57a93972300b)
+        ;
+
+        
+    
+    
+            var poly_line_6cb3e1a295dfcb407596e68d8a453a56 = L.polyline(
+                [[46.948819, 7.439117], [47.35193, 7.907683]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_cfd423131d8d99dbf095580ac73d1d03 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e69dd484938f4abda5ccf92fb9f37592 = $(`<div id="html_e69dd484938f4abda5ccf92fb9f37592" style="width: 100.0%; height: 100.0%;">Connection: Bern - Olten<br>Distance: 60 km<br>Tracks: 4<br>Time: 26</div>`)[0];
+                popup_cfd423131d8d99dbf095580ac73d1d03.setContent(html_e69dd484938f4abda5ccf92fb9f37592);
+            
+        
+
+        poly_line_6cb3e1a295dfcb407596e68d8a453a56.bindPopup(popup_cfd423131d8d99dbf095580ac73d1d03)
+        ;
+
+        
+    
+    
+            var poly_line_cbbfeca9ee73c4dd2fa7910c184b80f0 = L.polyline(
+                [[47.39135, 8.051251], [47.35193, 7.907683]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_a59691bc47dc83a4be8de6c334c1030b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f8baecb42d2ecbae7a65eba36f19be0e = $(`<div id="html_f8baecb42d2ecbae7a65eba36f19be0e" style="width: 100.0%; height: 100.0%;">Connection: Aarau - Olten<br>Distance: 13 km<br>Tracks: 4<br>Time: 11</div>`)[0];
+                popup_a59691bc47dc83a4be8de6c334c1030b.setContent(html_f8baecb42d2ecbae7a65eba36f19be0e);
+            
+        
+
+        poly_line_cbbfeca9ee73c4dd2fa7910c184b80f0.bindPopup(popup_a59691bc47dc83a4be8de6c334c1030b)
+        ;
+
+        
+    
+    
+            var poly_line_da128e42c20b24d5f4a1724190757e51 = L.polyline(
+                [[47.423183, 9.369873], [47.565556, 9.379444]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_f762b0d7c4909d658bb097da6368f520 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dbc0f09fe3344dc437142ae427ae2916 = $(`<div id="html_dbc0f09fe3344dc437142ae427ae2916" style="width: 100.0%; height: 100.0%;">Connection: St.Gallen - Romanshorn<br>Distance: 20 km<br>Tracks: 1<br>Time: 18</div>`)[0];
+                popup_f762b0d7c4909d658bb097da6368f520.setContent(html_dbc0f09fe3344dc437142ae427ae2916);
+            
+        
+
+        poly_line_da128e42c20b24d5f4a1724190757e51.bindPopup(popup_f762b0d7c4909d658bb097da6368f520)
+        ;
+
+        
+    
+    
+            var poly_line_babb99ce30c57039cd2ee58cce15b56b = L.polyline(
+                [[47.658754, 9.177312], [47.565556, 9.379444]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_06e7f8e6b077c23c7c7dcc6e254f9d72 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2fdd99c10cde5a1cd0180ffcd578729c = $(`<div id="html_2fdd99c10cde5a1cd0180ffcd578729c" style="width: 100.0%; height: 100.0%;">Connection: Konstanz - Romanshorn<br>Distance: 20 km<br>Tracks: 1<br>Time: 16</div>`)[0];
+                popup_06e7f8e6b077c23c7c7dcc6e254f9d72.setContent(html_2fdd99c10cde5a1cd0180ffcd578729c);
+            
+        
+
+        poly_line_babb99ce30c57039cd2ee58cce15b56b.bindPopup(popup_06e7f8e6b077c23c7c7dcc6e254f9d72)
+        ;
+
+        
+    
+    
+            var poly_line_bc73e256b4f597dafeae27a36d7ece01 = L.polyline(
+                [[46.516785, 6.629096], [46.69351, 6.911815]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_7503cc04b4072bb5ecf44f60dfa8a8b7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4bc179790b5f21c54eba14a0bb7443c6 = $(`<div id="html_4bc179790b5f21c54eba14a0bb7443c6" style="width: 100.0%; height: 100.0%;">Connection: Lausanne - Romont<br>Distance: 40 km<br>Tracks: 2<br>Time: 31</div>`)[0];
+                popup_7503cc04b4072bb5ecf44f60dfa8a8b7.setContent(html_4bc179790b5f21c54eba14a0bb7443c6);
+            
+        
+
+        poly_line_bc73e256b4f597dafeae27a36d7ece01.bindPopup(popup_7503cc04b4072bb5ecf44f60dfa8a8b7)
+        ;
+
+        
+    
+    
+            var poly_line_98e34e98875b8765bc8f2478e7dec624 = L.polyline(
+                [[46.803269, 7.151031], [46.69351, 6.911815]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_a70bd20eed1520b43767a16a592beaee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1cb6c5424c201cf915d1abe4eb2b6d7d = $(`<div id="html_1cb6c5424c201cf915d1abe4eb2b6d7d" style="width: 100.0%; height: 100.0%;">Connection: Fribourg - Romont<br>Distance: 25 km<br>Tracks: 2<br>Time: 17</div>`)[0];
+                popup_a70bd20eed1520b43767a16a592beaee.setContent(html_1cb6c5424c201cf915d1abe4eb2b6d7d);
+            
+        
+
+        poly_line_98e34e98875b8765bc8f2478e7dec624.bindPopup(popup_a70bd20eed1520b43767a16a592beaee)
+        ;
+
+        
+    
+    
+            var poly_line_de45dff64fac11af381bcbdb3a8f2a3c = L.polyline(
+                [[47.462389, 9.041], [47.423183, 9.369873]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_72eb911ffed5a40fb658f95ef4f4ff13 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0deb7c1448c6d862440f320b8dfe279a = $(`<div id="html_0deb7c1448c6d862440f320b8dfe279a" style="width: 100.0%; height: 100.0%;">Connection: Wil - St.Gallen<br>Distance: 33 km<br>Tracks: 4<br>Time: 26</div>`)[0];
+                popup_72eb911ffed5a40fb658f95ef4f4ff13.setContent(html_0deb7c1448c6d862440f320b8dfe279a);
+            
+        
+
+        poly_line_de45dff64fac11af381bcbdb3a8f2a3c.bindPopup(popup_72eb911ffed5a40fb658f95ef4f4ff13)
+        ;
+
+        
+    
+    
+            var poly_line_a8f929c159c0e9e196112bd24deba5b5 = L.polyline(
+                [[47.565556, 9.379444], [47.423183, 9.369873]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_1a5c9c2ec0ec6f0683605ba183bbbde3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_08989bda8dde243e9a1beb5a0ffce964 = $(`<div id="html_08989bda8dde243e9a1beb5a0ffce964" style="width: 100.0%; height: 100.0%;">Connection: Romanshorn - St.Gallen<br>Distance: 20 km<br>Tracks: 1<br>Time: 18</div>`)[0];
+                popup_1a5c9c2ec0ec6f0683605ba183bbbde3.setContent(html_08989bda8dde243e9a1beb5a0ffce964);
+            
+        
+
+        poly_line_a8f929c159c0e9e196112bd24deba5b5.bindPopup(popup_1a5c9c2ec0ec6f0683605ba183bbbde3)
+        ;
+
+        
+    
+    
+            var poly_line_f590f16de1f24709f9667b6af45885e9 = L.polyline(
+                [[46.85308, 9.528919], [47.423183, 9.369873]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_3bff468dcaa99699634dceb8becddaef = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_92539be611163ece25c044a9e583a581 = $(`<div id="html_92539be611163ece25c044a9e583a581" style="width: 100.0%; height: 100.0%;">Connection: Chur - St.Gallen<br>Distance: 107 km<br>Tracks: 2<br>Time: 83</div>`)[0];
+                popup_3bff468dcaa99699634dceb8becddaef.setContent(html_92539be611163ece25c044a9e583a581);
+            
+        
+
+        poly_line_f590f16de1f24709f9667b6af45885e9.bindPopup(popup_3bff468dcaa99699634dceb8becddaef)
+        ;
+
+        
+    
+    
+            var poly_line_14370113a13592a867351baf3f1990e1 = L.polyline(
+                [[47.3641, 8.530788], [47.698282, 8.632756]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_0fad59344585ad402a924ac16863517b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_09a9aeb204c3863576c9b9d48a2c8159 = $(`<div id="html_09a9aeb204c3863576c9b9d48a2c8159" style="width: 100.0%; height: 100.0%;">Connection: Zurich - Schaffhausen<br>Distance: 47 km<br>Tracks: 2<br>Time: 36</div>`)[0];
+                popup_0fad59344585ad402a924ac16863517b.setContent(html_09a9aeb204c3863576c9b9d48a2c8159);
+            
+        
+
+        poly_line_14370113a13592a867351baf3f1990e1.bindPopup(popup_0fad59344585ad402a924ac16863517b)
+        ;
+
+        
+    
+    
+            var poly_line_713bce560e1febff13e0c51cfc18a492 = L.polyline(
+                [[46.293889, 7.881389], [46.227553, 7.359197]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_0fec3f256a38523c9964dcce0b1a69cd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_58120649c6ff72278fd7017b0f6c72ef = $(`<div id="html_58120649c6ff72278fd7017b0f6c72ef" style="width: 100.0%; height: 100.0%;">Connection: Visp - Sion<br>Distance: 45 km<br>Tracks: 2<br>Time: 25</div>`)[0];
+                popup_0fec3f256a38523c9964dcce0b1a69cd.setContent(html_58120649c6ff72278fd7017b0f6c72ef);
+            
+        
+
+        poly_line_713bce560e1febff13e0c51cfc18a492.bindPopup(popup_0fec3f256a38523c9964dcce0b1a69cd)
+        ;
+
+        
+    
+    
+            var poly_line_440df5f49184194e22b8dd549d6431c0 = L.polyline(
+                [[46.435875, 6.910434], [46.227553, 7.359197]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_1a76056f153e5f9589adff5702694a8f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_82f3db09fbab98d4e7b170ae1719ab90 = $(`<div id="html_82f3db09fbab98d4e7b170ae1719ab90" style="width: 100.0%; height: 100.0%;">Connection: Montreux - Sion<br>Distance: 67 km<br>Tracks: 2<br>Time: 34</div>`)[0];
+                popup_1a76056f153e5f9589adff5702694a8f.setContent(html_82f3db09fbab98d4e7b170ae1719ab90);
+            
+        
+
+        poly_line_440df5f49184194e22b8dd549d6431c0.bindPopup(popup_1a76056f153e5f9589adff5702694a8f)
+        ;
+
+        
+    
+    
+            var poly_line_80d859fddd95495bee6efd044c463b2e = L.polyline(
+                [[47.35193, 7.907683], [47.204178, 7.542687]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_06c4ad1613728504e746fb614854d211 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4f449a7bd3a678c5724a510b33dae128 = $(`<div id="html_4f449a7bd3a678c5724a510b33dae128" style="width: 100.0%; height: 100.0%;">Connection: Olten - Solothurn<br>Distance: 38 km<br>Tracks: 2<br>Time: 16</div>`)[0];
+                popup_06c4ad1613728504e746fb614854d211.setContent(html_4f449a7bd3a678c5724a510b33dae128);
+            
+        
+
+        poly_line_80d859fddd95495bee6efd044c463b2e.bindPopup(popup_06c4ad1613728504e746fb614854d211)
+        ;
+
+        
+    
+    
+            var poly_line_4a9fbdae5aad42284c5d7a11756cfffa = L.polyline(
+                [[47.132885, 7.242918], [47.204178, 7.542687]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_235538e4fdd2228bd78dbb8456d548a5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_141bd25fb23f3134a60673105a08fb4f = $(`<div id="html_141bd25fb23f3134a60673105a08fb4f" style="width: 100.0%; height: 100.0%;">Connection: Biel/Bienne - Solothurn<br>Distance: 28 km<br>Tracks: 2<br>Time: 15</div>`)[0];
+                popup_235538e4fdd2228bd78dbb8456d548a5.setContent(html_141bd25fb23f3134a60673105a08fb4f);
+            
+        
+
+        poly_line_4a9fbdae5aad42284c5d7a11756cfffa.bindPopup(popup_235538e4fdd2228bd78dbb8456d548a5)
+        ;
+
+        
+    
+    
+            var poly_line_5985ea7c4f9a74f5effc9d316bc7f588 = L.polyline(
+                [[46.948819, 7.439117], [47.204178, 7.542687]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_e0726d0606ff96882a50989e5e5f7336 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fc725e45df725a167862494fc512fc6b = $(`<div id="html_fc725e45df725a167862494fc512fc6b" style="width: 100.0%; height: 100.0%;">Connection: Bern - Solothurn<br>Distance: 43 km<br>Tracks: 1<br>Time: 37</div>`)[0];
+                popup_e0726d0606ff96882a50989e5e5f7336.setContent(html_fc725e45df725a167862494fc512fc6b);
+            
+        
+
+        poly_line_5985ea7c4f9a74f5effc9d316bc7f588.bindPopup(popup_e0726d0606ff96882a50989e5e5f7336)
+        ;
+
+        
+    
+    
+            var poly_line_af9548a1f5349787f6d9d3df187ebf3c = L.polyline(
+                [[46.293889, 7.881389], [46.754853, 7.629606]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_f25a144f49c321353ab7c05f86b28c3c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_27d4d0f72f32020111757fcfd66f6ded = $(`<div id="html_27d4d0f72f32020111757fcfd66f6ded" style="width: 100.0%; height: 100.0%;">Connection: Visp - Thun<br>Distance: 71 km<br>Tracks: 2<br>Time: 35</div>`)[0];
+                popup_f25a144f49c321353ab7c05f86b28c3c.setContent(html_27d4d0f72f32020111757fcfd66f6ded);
+            
+        
+
+        poly_line_af9548a1f5349787f6d9d3df187ebf3c.bindPopup(popup_f25a144f49c321353ab7c05f86b28c3c)
+        ;
+
+        
+    
+    
+            var poly_line_570887bbb958b291b14d786402ccc919 = L.polyline(
+                [[46.435875, 6.910434], [46.754853, 7.629606]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_009274f449c0e4ec2312650270e30574 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cf92c8bd611765775a8fe4c911f99128 = $(`<div id="html_cf92c8bd611765775a8fe4c911f99128" style="width: 100.0%; height: 100.0%;">Connection: Montreux - Thun<br>Distance: 95 km<br>Tracks: 1<br>Time: 170</div>`)[0];
+                popup_009274f449c0e4ec2312650270e30574.setContent(html_cf92c8bd611765775a8fe4c911f99128);
+            
+        
+
+        poly_line_570887bbb958b291b14d786402ccc919.bindPopup(popup_009274f449c0e4ec2312650270e30574)
+        ;
+
+        
+    
+    
+            var poly_line_de3b2e6ba0f048bc442f410d5a995444 = L.polyline(
+                [[46.69, 7.868889], [46.754853, 7.629606]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_42641ff92905326aceb314709885d39c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_21efa7ab77f8a9c96b42cb1a396f872f = $(`<div id="html_21efa7ab77f8a9c96b42cb1a396f872f" style="width: 100.0%; height: 100.0%;">Connection: Interlaken - Thun<br>Distance: 28 km<br>Tracks: 2<br>Time: 32</div>`)[0];
+                popup_42641ff92905326aceb314709885d39c.setContent(html_21efa7ab77f8a9c96b42cb1a396f872f);
+            
+        
+
+        poly_line_de3b2e6ba0f048bc442f410d5a995444.bindPopup(popup_42641ff92905326aceb314709885d39c)
+        ;
+
+        
+    
+    
+            var poly_line_fd2108467660aea9d163bc9e8f4fe6cd = L.polyline(
+                [[46.948819, 7.439117], [46.754853, 7.629606]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_7ceeed656a1ca61b367ab457511614f9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dd0822075848a7cbd43d50069c094c38 = $(`<div id="html_dd0822075848a7cbd43d50069c094c38" style="width: 100.0%; height: 100.0%;">Connection: Bern - Thun<br>Distance: 30 km<br>Tracks: 3<br>Time: 18</div>`)[0];
+                popup_7ceeed656a1ca61b367ab457511614f9.setContent(html_dd0822075848a7cbd43d50069c094c38);
+            
+        
+
+        poly_line_fd2108467660aea9d163bc9e8f4fe6cd.bindPopup(popup_7ceeed656a1ca61b367ab457511614f9)
+        ;
+
+        
+    
+    
+            var poly_line_55fd0b2f9842d2ac91cfbcb82858d4da = L.polyline(
+                [[46.754853, 7.629606], [46.293889, 7.881389]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_09f6afe1fa5c971a191fdb7d91b51ee1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dac775496de3a75c3ed4da8daa2db198 = $(`<div id="html_dac775496de3a75c3ed4da8daa2db198" style="width: 100.0%; height: 100.0%;">Connection: Thun - Visp<br>Distance: 71 km<br>Tracks: 2<br>Time: 35</div>`)[0];
+                popup_09f6afe1fa5c971a191fdb7d91b51ee1.setContent(html_dac775496de3a75c3ed4da8daa2db198);
+            
+        
+
+        poly_line_55fd0b2f9842d2ac91cfbcb82858d4da.bindPopup(popup_09f6afe1fa5c971a191fdb7d91b51ee1)
+        ;
+
+        
+    
+    
+            var poly_line_a97e098b7aa747d703aa77a8778412c3 = L.polyline(
+                [[46.227553, 7.359197], [46.293889, 7.881389]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_f4fb83f29c8aa4a27ce2c3e2912277ac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f69efabcab8c4715284ff482bf9c6c2f = $(`<div id="html_f69efabcab8c4715284ff482bf9c6c2f" style="width: 100.0%; height: 100.0%;">Connection: Sion - Visp<br>Distance: 45 km<br>Tracks: 2<br>Time: 25</div>`)[0];
+                popup_f4fb83f29c8aa4a27ce2c3e2912277ac.setContent(html_f69efabcab8c4715284ff482bf9c6c2f);
+            
+        
+
+        poly_line_a97e098b7aa747d703aa77a8778412c3.bindPopup(popup_f4fb83f29c8aa4a27ce2c3e2912277ac)
+        ;
+
+        
+    
+    
+            var poly_line_e36eeb2e8d30f35f0559e1f25beea2e8 = L.polyline(
+                [[46.319444, 7.988056], [46.293889, 7.881389]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_db377683050c7203e763aedd1be93cfc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_73eaf8905753e9494d6ba2809ea7a958 = $(`<div id="html_73eaf8905753e9494d6ba2809ea7a958" style="width: 100.0%; height: 100.0%;">Connection: Brig - Visp<br>Distance: 9 km<br>Tracks: 2<br>Time: 6</div>`)[0];
+                popup_db377683050c7203e763aedd1be93cfc.setContent(html_73eaf8905753e9494d6ba2809ea7a958);
+            
+        
+
+        poly_line_e36eeb2e8d30f35f0559e1f25beea2e8.bindPopup(popup_db377683050c7203e763aedd1be93cfc)
+        ;
+
+        
+    
+    
+            var poly_line_29b9bec771b8e4623100a7e1d6be38c2 = L.polyline(
+                [[47.500328, 8.723786], [47.462389, 9.041]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_411db5ef0eba054d91f7c9a3ef7141ab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0ad1ca0a387bfeb4c1ee8e9e8112b405 = $(`<div id="html_0ad1ca0a387bfeb4c1ee8e9e8112b405" style="width: 100.0%; height: 100.0%;">Connection: Winterthur - Wil<br>Distance: 27 km<br>Tracks: 4<br>Time: 18</div>`)[0];
+                popup_411db5ef0eba054d91f7c9a3ef7141ab.setContent(html_0ad1ca0a387bfeb4c1ee8e9e8112b405);
+            
+        
+
+        poly_line_29b9bec771b8e4623100a7e1d6be38c2.bindPopup(popup_411db5ef0eba054d91f7c9a3ef7141ab)
+        ;
+
+        
+    
+    
+            var poly_line_b85cc54672cf0e08fd2734c996efd014 = L.polyline(
+                [[47.423183, 9.369873], [47.462389, 9.041]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_5ba8b27774e490cc0ab0e094a797016b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8b5af4a77cff1a0fad4c5a50b8031307 = $(`<div id="html_8b5af4a77cff1a0fad4c5a50b8031307" style="width: 100.0%; height: 100.0%;">Connection: St.Gallen - Wil<br>Distance: 33 km<br>Tracks: 4<br>Time: 26</div>`)[0];
+                popup_5ba8b27774e490cc0ab0e094a797016b.setContent(html_8b5af4a77cff1a0fad4c5a50b8031307);
+            
+        
+
+        poly_line_b85cc54672cf0e08fd2734c996efd014.bindPopup(popup_5ba8b27774e490cc0ab0e094a797016b)
+        ;
+
+        
+    
+    
+            var poly_line_b3a99661512bade8fa040c60c0f443c4 = L.polyline(
+                [[47.3641, 8.530788], [47.500328, 8.723786]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_9c274348f6d32d949e3160afaa2c7c9c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3bf2e98bd07c2e347f52b1d59e289954 = $(`<div id="html_3bf2e98bd07c2e347f52b1d59e289954" style="width: 100.0%; height: 100.0%;">Connection: Zurich - Winterthur<br>Distance: 25 km<br>Tracks: 4<br>Time: 19</div>`)[0];
+                popup_9c274348f6d32d949e3160afaa2c7c9c.setContent(html_3bf2e98bd07c2e347f52b1d59e289954);
+            
+        
+
+        poly_line_b3a99661512bade8fa040c60c0f443c4.bindPopup(popup_9c274348f6d32d949e3160afaa2c7c9c)
+        ;
+
+        
+    
+    
+            var poly_line_d33d74d6519cf7d16d3f2e8e8b56ad97 = L.polyline(
+                [[47.462389, 9.041], [47.500328, 8.723786]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_8865de6f4cf7c255f63e83a7d509b548 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d2501ab9464c2a32dec1ead71663eb6b = $(`<div id="html_d2501ab9464c2a32dec1ead71663eb6b" style="width: 100.0%; height: 100.0%;">Connection: Wil - Winterthur<br>Distance: 27 km<br>Tracks: 4<br>Time: 18</div>`)[0];
+                popup_8865de6f4cf7c255f63e83a7d509b548.setContent(html_d2501ab9464c2a32dec1ead71663eb6b);
+            
+        
+
+        poly_line_d33d74d6519cf7d16d3f2e8e8b56ad97.bindPopup(popup_8865de6f4cf7c255f63e83a7d509b548)
+        ;
+
+        
+    
+    
+            var poly_line_ba06186f0c2122157b3ec84bbf80961b = L.polyline(
+                [[47.658754, 9.177312], [47.500328, 8.723786]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_db62ff95bea77ecfb90ab8ffc3d11a64 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8b05b3e9e6e9ed8cf68de19bb6dd81d1 = $(`<div id="html_8b05b3e9e6e9ed8cf68de19bb6dd81d1" style="width: 100.0%; height: 100.0%;">Connection: Konstanz - Winterthur<br>Distance: 54 km<br>Tracks: 2<br>Time: 50</div>`)[0];
+                popup_db62ff95bea77ecfb90ab8ffc3d11a64.setContent(html_8b05b3e9e6e9ed8cf68de19bb6dd81d1);
+            
+        
+
+        poly_line_ba06186f0c2122157b3ec84bbf80961b.bindPopup(popup_db62ff95bea77ecfb90ab8ffc3d11a64)
+        ;
+
+        
+    
+    
+            var poly_line_c4164246a02026aec781442edb12cf85 = L.polyline(
+                [[46.996727, 6.935713], [46.781876, 6.641153]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_c95223203b31814b3c2d44285628c58d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5cee2797e611807657951293613cbe75 = $(`<div id="html_5cee2797e611807657951293613cbe75" style="width: 100.0%; height: 100.0%;">Connection: Neuchatel - Yverdon-les-Bains<br>Distance: 40 km<br>Tracks: 2<br>Time: 17</div>`)[0];
+                popup_c95223203b31814b3c2d44285628c58d.setContent(html_5cee2797e611807657951293613cbe75);
+            
+        
+
+        poly_line_c4164246a02026aec781442edb12cf85.bindPopup(popup_c95223203b31814b3c2d44285628c58d)
+        ;
+
+        
+    
+    
+            var poly_line_41f74355177e29657dd7c3da05acb49e = L.polyline(
+                [[46.516785, 6.629096], [46.781876, 6.641153]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_c65117f5befd80e430ae8ea258346425 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a6003e12b1cb66ae8220e69ae583149a = $(`<div id="html_a6003e12b1cb66ae8220e69ae583149a" style="width: 100.0%; height: 100.0%;">Connection: Lausanne - Yverdon-les-Bains<br>Distance: 39 km<br>Tracks: 2<br>Time: 22</div>`)[0];
+                popup_c65117f5befd80e430ae8ea258346425.setContent(html_a6003e12b1cb66ae8220e69ae583149a);
+            
+        
+
+        poly_line_41f74355177e29657dd7c3da05acb49e.bindPopup(popup_c65117f5befd80e430ae8ea258346425)
+        ;
+
+        
+    
+    
+            var poly_line_63b875827f6d98811b34a5f3d1a95a5a = L.polyline(
+                [[47.3641, 8.530788], [47.173622, 8.51529]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_dc53a9532efa3395b13d60b90ab24b83 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_13cb79b5c849bf3f294a76a2d567a2e4 = $(`<div id="html_13cb79b5c849bf3f294a76a2d567a2e4" style="width: 100.0%; height: 100.0%;">Connection: Zurich - Zug<br>Distance: 32 km<br>Tracks: 3<br>Time: 21</div>`)[0];
+                popup_dc53a9532efa3395b13d60b90ab24b83.setContent(html_13cb79b5c849bf3f294a76a2d567a2e4);
+            
+        
+
+        poly_line_63b875827f6d98811b34a5f3d1a95a5a.bindPopup(popup_dc53a9532efa3395b13d60b90ab24b83)
+        ;
+
+        
+    
+    
+            var poly_line_aac865df60a3f9cefcc906fc0e73df78 = L.polyline(
+                [[47.050169, 8.310161], [47.173622, 8.51529]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_89d06f32c23da62863f8e24da065ebb7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3eac1a8252dd523d94c0b0458437bbd4 = $(`<div id="html_3eac1a8252dd523d94c0b0458437bbd4" style="width: 100.0%; height: 100.0%;">Connection: Luzern - Zug<br>Distance: 30 km<br>Tracks: 2<br>Time: 20</div>`)[0];
+                popup_89d06f32c23da62863f8e24da065ebb7.setContent(html_3eac1a8252dd523d94c0b0458437bbd4);
+            
+        
+
+        poly_line_aac865df60a3f9cefcc906fc0e73df78.bindPopup(popup_89d06f32c23da62863f8e24da065ebb7)
+        ;
+
+        
+    
+    
+            var poly_line_bc0299a19a2f565eaf505d51f5fbbc1b = L.polyline(
+                [[47.049152, 8.549482], [47.173622, 8.51529]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_012fd1a1acc2ab66d488296a2526fb1f);
+        
+    
+        var popup_826a347841da1ac97114a4bca3335ff2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2071f018fbec995cbd4d0651adaaffff = $(`<div id="html_2071f018fbec995cbd4d0651adaaffff" style="width: 100.0%; height: 100.0%;">Connection: Arth-Goldau - Zug<br>Distance: 30 km<br>Tracks: 2<br>Time: 29</div>`)[0];
+                popup_826a347841da1ac97114a4bca3335ff2.setContent(html_2071f018fbec995cbd4d0651adaaffff);
+            
+        
+
+        poly_line_bc0299a19a2f565eaf505d51f5fbbc1b.bindPopup(popup_826a347841da1ac97114a4bca3335ff2)
+        ;
+
+        
+    
+</script>
+</html>
