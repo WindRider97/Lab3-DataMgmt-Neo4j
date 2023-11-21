@@ -93,6 +93,35 @@ class DisplayTrainNetwork:
                       f"Time: {record['r']['time']}"
             )
 
+    def display_cities_within_distance(self, source_city_name, max_stops, min_population):
+        map_1 = folium.Map(location=center_switzerland, zoom_start=8)
+        with self.driver.session() as session:
+            session.execute_read(self._display_cities_and_lines, map_1)
+            session.execute_read(self._display_cities_within_distance(session, map_1, source_city_name, max_stops, min_population))
+        map_1.save('out/2.2.html')
+
+    def _display_cities_within_distance(self, tx, m, source_city_name, max_stops, min_population):
+        query_within_distance = (
+        """
+        MATCH (source:City {name: $source_city_name})-[:CONNECTED*1..$max_stops]-(city:City)
+        WHERE city.population > $min_population
+        RETURN source, city
+        """
+        )
+
+        result = tx.run(query_within_distance)
+        for record in result:
+            display_city_on_map(
+                m=m,
+                popup=record['city']['name'],
+                latitude=record['city']['latitude'],
+                longitude=record['city']['longitude'],
+                color="#00b300"
+            )
+
+# color="#00b300"
+# color="#00e600"
+
 if __name__ == "__main__":
     display_train_network = DisplayTrainNetwork("neo4j://localhost:7687")
 
@@ -100,5 +129,7 @@ if __name__ == "__main__":
 
     # display cities on the map
     display_train_network.display_cities()
-    #Exercice 2.1
+    # Exercice 2.1
     display_train_network.display_cities_and_lines()
+    # Exercice 2.2
+    display_train_network.display_cities_within_distance("Lucerne", 4, 10000)
