@@ -51,25 +51,16 @@ class GenerateTrainNetwork:
 
     @staticmethod
     def _create_line(tx, city1, city2, km, time, nb_tracks):
+        cost = 1000000 * nb_tracks * km
         query = (
             """
             MATCH (c1:City {name: $city1}), (c2:City {name: $city2})
             MERGE (c1)-[r:CONNECTED]-(c2)
-            ON CREATE SET r.km = $km, r.time = $time, r.nb_tracks = $nb_tracks
+            ON CREATE SET r.km = $km, r.time = $time, r.nb_tracks = $nb_tracks, r.cost = $cost
             RETURN c1, c2
             """
         )
-        '''
-        """
-        MATCH (c1:City {name: $city1}), (c2:City {name: $city2})
-        MERGE (c1)-[r:CONNECTED]->(c2)
-        ON CREATE SET r.km = $km, r.time = $time, r.nb_tracks = $nb_tracks
-        MERGE (c2)-[:CONNECTED]->(c1)
-        ON CREATE SET r.km = $km, r.time = $time, r.nb_tracks = $nb_tracks
-        RETURN c1, c2
-        """ ???
-        '''
-        result = tx.run(query, city1=city1, city2=city2, km=km, time=time, nb_tracks=nb_tracks)
+        result = tx.run(query, city1=city1, city2=city2, km=km, time=time, nb_tracks=nb_tracks, cost=cost)
 
         line_created = result.single()
         print("Created line between: {city1} - {city2}".format(city1=line_created['c1']['name'], city2=line_created['c2']['name']))

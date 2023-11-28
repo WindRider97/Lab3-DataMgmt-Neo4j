@@ -75,7 +75,8 @@ class DisplayTrainNetwork:
         for record in cities_result:
             display_city_on_map(
                 m=m,
-                popup=record['c']['name'],
+                popup=f"{record['c']['name']}<br>"
+                      f"{record['c']['population']}",
                 latitude=record['c']['latitude'],
                 longitude=record['c']['longitude']
             )
@@ -93,34 +94,330 @@ class DisplayTrainNetwork:
                       f"Time: {record['r']['time']}"
             )
 
-    def display_cities_within_distance(self, source_city_name, max_stops, min_population):
+    def display_cities_within_distance(self):
         map_1 = folium.Map(location=center_switzerland, zoom_start=8)
         with self.driver.session() as session:
-            session.execute_read(self._display_cities_and_lines, map_1)
-            session.execute_read(self._display_cities_within_distance(session, map_1, source_city_name, max_stops, min_population))
+            session.execute_read(self._display_cities_within_distance, map_1)
         map_1.save('out/2.2.html')
 
-    def _display_cities_within_distance(self, tx, m, source_city_name, max_stops, min_population):
+    def _display_cities_within_distance(self, tx, m):
         query_within_distance = (
         """
-        MATCH (source:City {name: $source_city_name})-[:CONNECTED*1..$max_stops]-(city:City)
-        WHERE city.population > $min_population
-        RETURN source, city
+        MATCH (startCity:City {name: "Luzern"})-[:CONNECTED*1..4]-(connectedCity:City)
+        WHERE connectedCity.population > 10000
+        RETURN DISTINCT connectedCity
         """
         )
+        cities_query = "MATCH (c:City) RETURN c"
+        lines_query = "MATCH (c1:City)-[r:CONNECTED]-(c2:City) RETURN c1, c2, r"
 
-        result = tx.run(query_within_distance)
-        for record in result:
+        cities_result = tx.run(cities_query)
+        lines_result = tx.run(lines_query)
+        distance_result = tx.run(query_within_distance)
+
+        cities_near_Luzern = [record['connectedCity']['name'] for record in distance_result]
+        for record in lines_result:
+            city1_coords = (record['c1']['latitude'], record['c1']['longitude'])
+            city2_coords = (record['c2']['latitude'], record['c2']['longitude'])
+
+            display_polyline_on_map(
+                m=m,
+                locations=[city1_coords, city2_coords],
+                popup=f"Connection: {record['c1']['name']} - {record['c2']['name']}<br>"
+                      f"Distance: {record['r']['km']} km<br>"
+                      f"Tracks: {record['r']['nb_tracks']}<br>"
+                      f"Time: {record['r']['time']}"
+            )
+        for record in cities_result:
+            city_name = record['c']['name']
+            color = (
+                "#00b300" if city_name == "Luzern" else
+                "#00e600" if city_name in cities_near_Luzern else
+                "#3186cc"
+            )
             display_city_on_map(
                 m=m,
-                popup=record['city']['name'],
-                latitude=record['city']['latitude'],
-                longitude=record['city']['longitude'],
-                color="#00b300"
+                popup=f"{city_name}<br>"
+                      f"{record['c']['population']} habitants",
+                latitude=record['c']['latitude'],
+                longitude=record['c']['longitude'],
+                color=color
             )
 
-# color="#00b300"
-# color="#00e600"
+    def display_shortest_path_km(self):
+        map_1 = folium.Map(location=center_switzerland, zoom_start=8)
+        with self.driver.session() as session:
+            session.execute_read(self._display_shortest_path_km, map_1)
+        map_1.save('out/2.3.1.html')
+
+    @staticmethod
+    def _display_shortest_path_km(tx, m):
+        km_graph_query = (
+            """
+            CALL gds.graph.create(
+            'shortest_path_km_graph',
+            'City',
+            {
+                CONNECTED: {
+                type: 'CONNECTED',
+                orientation: 'UNDIRECTED',
+                properties: {
+                    km: {
+                    property: 'km',
+                    defaultValue: 1.0
+                    }
+                }
+                }
+            }
+            )
+            """
+        )
+        shortest_km_query = (
+            """
+            MATCH (source:City {name: 'Geneve'}), (target:City {name: 'Chur'})
+            CALL gds.shortestPath.dijkstra.stream('shortest_path_km_graph', {
+                sourceNode: source,
+                targetNode: target,
+                relationshipWeightProperty: 'km'
+            })
+            YIELD index, sourceNode, targetNode, totalCost, nodeIds, costs, path
+            RETURN
+                index,
+                gds.util.asNode(sourceNode).name AS sourceNodeName,
+                gds.util.asNode(targetNode).name AS targetNodeName,
+                totalCost,
+                [nodeId IN nodeIds | gds.util.asNode(nodeId).name] AS nodeNames,
+                costs,
+                nodes(path) as path
+            ORDER BY index
+            """
+        )
+        km_graph_result = tx.run(km_graph_query)
+        shortest_km_result = tx.run(shortest_km_query)
+        cities_query = "MATCH (c:City) RETURN c"
+        lines_query = "MATCH (c1:City)-[r:CONNECTED]-(c2:City) RETURN c1, c2, r"
+
+        cities_result = tx.run(cities_query)
+        lines_result = tx.run(lines_query)
+
+        shortest_path_cities = [record['nodeNames'] for record in shortest_km_result]   
+        shortest_path_cities = [item for sublist in shortest_path_cities for item in sublist]
+
+        for record in lines_result:
+            city1_coords = (record['c1']['latitude'], record['c1']['longitude'])
+            city2_coords = (record['c2']['latitude'], record['c2']['longitude'])
+            
+            color = (
+                "#ff0000" if record['c1']['name'] in shortest_path_cities and record['c2']['name'] in shortest_path_cities else
+                "#3186cc"
+            )
+
+            display_polyline_on_map(
+                m=m,
+                locations=[city1_coords, city2_coords],
+                popup=f"Connection: {record['c1']['name']} - {record['c2']['name']}<br>"
+                      f"Distance: {record['r']['km']} km<br>"
+                      f"Tracks: {record['r']['nb_tracks']}<br>"
+                      f"Time: {record['r']['time']}",
+                color=color
+            )
+        for record in cities_result:
+            city_name = record['c']['name']
+            color = (
+                "#620000" if city_name in shortest_path_cities else
+                "#3186cc"
+            )
+            
+            display_city_on_map(
+                m=m,
+                popup=f"{city_name}<br>"
+                      f"{record['c']['population']} habitants",
+                latitude=record['c']['latitude'],
+                longitude=record['c']['longitude'],
+                color=color
+            )
+
+
+    def display_shortest_path_time(self):
+        map_1 = folium.Map(location=center_switzerland, zoom_start=8)
+        with self.driver.session() as session:
+            session.execute_read(self._display_shortest_path_time, map_1)
+        map_1.save('out/2.3.2.html')
+
+    @staticmethod
+    def _display_shortest_path_time(tx, m):
+        time_graph_query = (
+            """
+            CALL gds.graph.create(
+            'shortest_path_time_graph',
+            'City',
+            {
+                CONNECTED: {
+                type: 'CONNECTED',
+                orientation: 'UNDIRECTED',
+                properties: {
+                    time: {
+                    property: 'time',
+                    defaultValue: 1.0
+                    }
+                }
+                }
+            }
+            )
+            """
+        )
+        shortest_time_query = (
+            """
+            MATCH (source:City {name: 'Geneve'}), (target:City {name: 'Chur'})
+            CALL gds.shortestPath.dijkstra.stream('shortest_path_time_graph', {
+                sourceNode: source,
+                targetNode: target,
+                relationshipWeightProperty: 'time'
+            })
+            YIELD index, sourceNode, targetNode, totalCost, nodeIds, costs, path
+            RETURN
+                index,
+                gds.util.asNode(sourceNode).name AS sourceNodeName,
+                gds.util.asNode(targetNode).name AS targetNodeName,
+                totalCost,
+                [nodeId IN nodeIds | gds.util.asNode(nodeId).name] AS nodeNames,
+                costs,
+                nodes(path) as path
+            ORDER BY index
+            """
+        )
+        tx.run(time_graph_query)
+        shortest_time_result = tx.run(shortest_time_query)
+        cities_query = "MATCH (c:City) RETURN c"
+        lines_query = "MATCH (c1:City)-[r:CONNECTED]-(c2:City) RETURN c1, c2, r"
+
+        cities_result = tx.run(cities_query)
+        lines_result = tx.run(lines_query)
+
+        shortest_path_cities = [record['nodeNames'] for record in shortest_time_result]   
+        shortest_path_cities = [item for sublist in shortest_path_cities for item in sublist]
+
+        for record in lines_result:
+            city1_coords = (record['c1']['latitude'], record['c1']['longitude'])
+            city2_coords = (record['c2']['latitude'], record['c2']['longitude'])
+            
+            color = (
+                "#ff0000" if record['c1']['name'] in shortest_path_cities and record['c2']['name'] in shortest_path_cities else
+                "#3186cc"
+            )
+
+            display_polyline_on_map(
+                m=m,
+                locations=[city1_coords, city2_coords],
+                popup=f"Connection: {record['c1']['name']} - {record['c2']['name']}<br>"
+                      f"Distance: {record['r']['km']} km<br>"
+                      f"Tracks: {record['r']['nb_tracks']}<br>"
+                      f"Time: {record['r']['time']}",
+                color=color
+            )
+        for record in cities_result:
+            city_name = record['c']['name']
+            color = (
+                "#620000" if city_name in shortest_path_cities else
+                "#3186cc"
+            )
+            
+            display_city_on_map(
+                m=m,
+                popup=f"{city_name}<br>"
+                      f"{record['c']['population']} habitants",
+                latitude=record['c']['latitude'],
+                longitude=record['c']['longitude'],
+                color=color
+            )
+
+    def display_minimum_spanning_tree(self):
+        map_1 = folium.Map(location=center_switzerland, zoom_start=8)
+        with self.driver.session() as session:
+            session.execute_write(self._display_minimum_spanning_tree, map_1)
+        map_1.save('out/2.4.html')
+
+    @staticmethod
+    def _display_minimum_spanning_tree(tx, m):
+        minimum_spanning_tree_graph_query = (
+            """
+            CALL gds.graph.create(
+            'minimum_spanning_tree_graph',
+            'City',
+            {
+                CONNECTED: {
+                type: 'CONNECTED',
+                orientation: 'UNDIRECTED',
+                properties: {
+                    cost: {
+                    property: 'cost',
+                    defaultValue: 1.0
+                    }
+                }
+                }
+            }
+            )
+            """
+        )
+        minimum_spanning_tree_query = (
+            """
+            MATCH (n:Source {name: 'Bern'})
+            CALL gds.alpha.spanningTree.minimum.write('minimum_spanning_tree_graph', {
+                sourceNode: n,
+                writeProperty: 'cost',
+                relationshipWeightProperty: 'cost',
+                writeRelationshipType: 'MST'
+            })
+            YIELD createMillis, computeMillis, writeMillis, effectiveNodeCount
+            RETURN createMillis, computeMillis, writeMillis, effectiveNodeCount
+            """
+        )
+        
+        tx.run(minimum_spanning_tree_graph_query)
+        tx.run(minimum_spanning_tree_query)
+        
+        cities_query = "MATCH (c:City) RETURN c"
+        lines_query = "MATCH (c1:City)-[r:CONNECTED]-(c2:City) RETURN c1, c2, r"
+        
+        cities_result = tx.run(cities_query)
+        lines_result = tx.run(lines_query)
+        
+        for record in lines_result:
+            city1_coords = (record['c1']['latitude'], record['c1']['longitude'])
+            city2_coords = (record['c2']['latitude'], record['c2']['longitude'])
+            
+            color = (
+                "#ff0000" if record['r']['mst'] else
+                "#3186cc"
+            )
+
+            display_polyline_on_map(
+                m=m,
+                locations=[city1_coords, city2_coords],
+                popup=f"Connection: {record['c1']['name']} - {record['c2']['name']}<br>"
+                      f"Distance: {record['r']['km']} km<br>"
+                      f"Tracks: {record['r']['nb_tracks']}<br>"
+                      f"Time: {record['r']['time']}",
+                color=color
+            )
+        
+        for record in cities_result:
+            city_name = record['c']['name']
+            color = (
+                "#620000" if record['c']['mst'] else
+                "#3186cc"
+            )
+            
+            display_city_on_map(
+                m=m,
+                popup=f"{city_name}<br>"
+                      f"{record['c']['population']} habitants",
+                latitude=record['c']['latitude'],
+                longitude=record['c']['longitude'],
+                color=color
+            )
+        
+        
 
 if __name__ == "__main__":
     display_train_network = DisplayTrainNetwork("neo4j://localhost:7687")
@@ -132,4 +429,9 @@ if __name__ == "__main__":
     # Exercice 2.1
     display_train_network.display_cities_and_lines()
     # Exercice 2.2
-    display_train_network.display_cities_within_distance("Lucerne", 4, 10000)
+    display_train_network.display_cities_within_distance()
+    # Exercice 2.3
+    display_train_network.display_shortest_path_km()
+    display_train_network.display_shortest_path_time()
+    # Exercice 2.4
+    display_train_network.display_minimum_spanning_tree()
