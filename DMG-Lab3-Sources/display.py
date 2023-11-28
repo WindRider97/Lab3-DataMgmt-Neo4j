@@ -24,7 +24,7 @@ def display_polyline_on_map(m, locations, popup=None, color="#3186cc", weight=2.
         weight=weight,
         opacity=1
     ).add_to(m)
-
+    
 
 class DisplayTrainNetwork:
 
@@ -339,85 +339,72 @@ class DisplayTrainNetwork:
 
     @staticmethod
     def _display_minimum_spanning_tree(tx, m):
-        minimum_spanning_tree_graph_query = (
-            """
-            CALL gds.graph.create(
-            'minimum_spanning_tree_graph',
-            'City',
-            {
-                CONNECTED: {
-                type: 'CONNECTED',
-                orientation: 'UNDIRECTED',
-                properties: {
-                    cost: {
-                    property: 'cost',
-                    defaultValue: 1.0
-                    }
-                }
-                }
-            }
-            )
-            """
-        )
         minimum_spanning_tree_query = (
             """
-            MATCH (n:Source {name: 'Bern'})
-            CALL gds.alpha.spanningTree.minimum.write('minimum_spanning_tree_graph', {
-                sourceNode: n,
-                writeProperty: 'cost',
+            MATCH (n:City {name: 'Bern'})
+            CALL gds.alpha.spanningTree.minimum.write({
+                nodeProjection: 'City',
+                relationshipProjection: {
+                    CONNECTED: {
+                        type: 'CONNECTED',
+                        orientation: 'UNDIRECTED',
+                        properties: {
+                            cost: {
+                                property: 'cost',
+                                defaultValue: 1.0
+                            }
+                        }
+                    }
+                },
+                startNodeId: id(n),
                 relationshipWeightProperty: 'cost',
-                writeRelationshipType: 'MST'
+                writeProperty: 'MINST',
+                weightWriteProperty: 'writeCost'
             })
             YIELD createMillis, computeMillis, writeMillis, effectiveNodeCount
             RETURN createMillis, computeMillis, writeMillis, effectiveNodeCount
             """
         )
         
-        tx.run(minimum_spanning_tree_graph_query)
         tx.run(minimum_spanning_tree_query)
         
-        cities_query = "MATCH (c:City) RETURN c"
-        lines_query = "MATCH (c1:City)-[r:CONNECTED]-(c2:City) RETURN c1, c2, r"
+        path_query = (
+            """
+            MATCH path = (n:City {name: 'Bern'})-[:MINST*]-()
+            WITH relationships(path) AS rels
+            UNWIND rels AS rel
+            WITH DISTINCT rel AS rel
+            RETURN startNode(rel) AS source, endNode(rel) AS target, rel.writeCost AS cost
+            """
+        )
         
-        cities_result = tx.run(cities_query)
-        lines_result = tx.run(lines_query)
+        path_result = tx.run(path_query)
         
-        for record in lines_result:
-            city1_coords = (record['c1']['latitude'], record['c1']['longitude'])
-            city2_coords = (record['c2']['latitude'], record['c2']['longitude'])
+        # Draw the minimum spanning tree
+        for record in path_result:
+            city1_coords = (record['source']['latitude'], record['source']['longitude'])
+            city2_coords = (record['target']['latitude'], record['target']['longitude'])
             
-            color = (
-                "#ff0000" if record['r']['mst'] else
-                "#3186cc"
-            )
-
             display_polyline_on_map(
                 m=m,
                 locations=[city1_coords, city2_coords],
-                popup=f"Connection: {record['c1']['name']} - {record['c2']['name']}<br>"
-                      f"Distance: {record['r']['km']} km<br>"
-                      f"Tracks: {record['r']['nb_tracks']}<br>"
-                      f"Time: {record['r']['time']}",
-                color=color
+                popup=f"Connection: {record['source']['name']} - {record['target']['name']}<br>"
+                      f"Distance: {record['cost']} km<br>",
+                color="#3186cc"
             )
         
+        # Draw the cities
+        cities_query = "MATCH (c:City) RETURN c"
+        cities_result = tx.run(cities_query)
         for record in cities_result:
-            city_name = record['c']['name']
-            color = (
-                "#620000" if record['c']['mst'] else
-                "#3186cc"
-            )
-            
             display_city_on_map(
                 m=m,
-                popup=f"{city_name}<br>"
+                popup=f"{record['c']['name']}<br>"
                       f"{record['c']['population']} habitants",
                 latitude=record['c']['latitude'],
                 longitude=record['c']['longitude'],
-                color=color
+                color="#3186cc"
             )
-        
-        
 
 if __name__ == "__main__":
     display_train_network = DisplayTrainNetwork("neo4j://localhost:7687")

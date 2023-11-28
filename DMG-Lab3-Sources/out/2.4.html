@@ -1,0 +1,1478 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6afd33f967cc83b0f8c84d86e61284f0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_6afd33f967cc83b0f8c84d86e61284f0" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6afd33f967cc83b0f8c84d86e61284f0 = L.map(
+                "map_6afd33f967cc83b0f8c84d86e61284f0",
+                {
+                    center: [46.800663464, 8.222665776],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 8,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e41de184d544692371786896c92b8812 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_e41de184d544692371786896c92b8812.addTo(map_6afd33f967cc83b0f8c84d86e61284f0);
+    
+            var poly_line_1bf6a62438793e1b66f3cb459dc55415 = L.polyline(
+                [[46.948819, 7.439117], [47.132885, 7.242918]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_6afd33f967cc83b0f8c84d86e61284f0);
+        
+    
+        var popup_24ede90b88b44b9bb4904636cb44ef98 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8e83363ccb53eb0b69dcebfea121f430 = $(`<div id="html_8e83363ccb53eb0b69dcebfea121f430" style="width: 100.0%; height: 100.0%;">Connection: Bern - Biel/Bienne<br>Distance: 36000000.0 km<br></div>`)[0];
+                popup_24ede90b88b44b9bb4904636cb44ef98.setContent(html_8e83363ccb53eb0b69dcebfea121f430);
+            
+        
+
+        poly_line_1bf6a62438793e1b66f3cb459dc55415.bindPopup(popup_24ede90b88b44b9bb4904636cb44ef98)
+        ;
+
+        
+    
+    
+            var poly_line_1d765c8f8b40535716a8f62a4048d5a1 = L.polyline(
+                [[47.132885, 7.242918], [47.361996, 7.350065]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_6afd33f967cc83b0f8c84d86e61284f0);
+        
+    
+        var popup_fd3d1fa3480102e992b62efe10c1d4b6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fa320bf6b655d82a32e9f868cc771ea8 = $(`<div id="html_fa320bf6b655d82a32e9f868cc771ea8" style="width: 100.0%; height: 100.0%;">Connection: Biel/Bienne - Delemont<br>Distance: 35000000.0 km<br></div>`)[0];
+                popup_fd3d1fa3480102e992b62efe10c1d4b6.setContent(html_fa320bf6b655d82a32e9f868cc771ea8);
+            
+        
+
+        poly_line_1d765c8f8b40535716a8f62a4048d5a1.bindPopup(popup_fd3d1fa3480102e992b62efe10c1d4b6)
+        ;
+
+        
+    
+    
+            var poly_line_eb0a43f54f563afd55a27e2dbbf0899f = L.polyline(
+                [[47.361996, 7.350065], [47.546944, 7.59]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_6afd33f967cc83b0f8c84d86e61284f0);
+        
+    
+        var popup_3f4ac8971d0cc95ec4ea3030f58034ed = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_45a8bf9bd1fe126af58617ca4917024d = $(`<div id="html_45a8bf9bd1fe126af58617ca4917024d" style="width: 100.0%; height: 100.0%;">Connection: Delemont - Basel<br>Distance: 45000000.0 km<br></div>`)[0];
+                popup_3f4ac8971d0cc95ec4ea3030f58034ed.setContent(html_45a8bf9bd1fe126af58617ca4917024d);
+            
+        
+
+        poly_line_eb0a43f54f563afd55a27e2dbbf0899f.bindPopup(popup_3f4ac8971d0cc95ec4ea3030f58034ed)
+        ;
+
+        
+    
+    
+            var poly_line_74db2e6e8d5874f06a0d411533c6f089 = L.polyline(
+                [[47.546944, 7.59], [47.484461, 7.731367]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_6afd33f967cc83b0f8c84d86e61284f0);
+        
+    
+        var popup_35bacdc205d16b68e69d7036b757b192 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5bbe5753bd8cf8118e9df0e0c5e6dc7f = $(`<div id="html_5bbe5753bd8cf8118e9df0e0c5e6dc7f" style="width: 100.0%; height: 100.0%;">Connection: Basel - Liestal<br>Distance: 60000000.0 km<br></div>`)[0];
+                popup_35bacdc205d16b68e69d7036b757b192.setContent(html_5bbe5753bd8cf8118e9df0e0c5e6dc7f);
+            
+        
+
+        poly_line_74db2e6e8d5874f06a0d411533c6f089.bindPopup(popup_35bacdc205d16b68e69d7036b757b192)
+        ;
+
+        
+    
+    
+            var poly_line_fa646b318115f1f1e715450e03fe509b = L.polyline(
+                [[47.546944, 7.59], [47.3641, 8.530788]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_6afd33f967cc83b0f8c84d86e61284f0);
+        
+    
+        var popup_7518fb935596a9064b67bd1061e4b4d8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5d0f2279452066f6ba7d104142b1cbc9 = $(`<div id="html_5d0f2279452066f6ba7d104142b1cbc9" style="width: 100.0%; height: 100.0%;">Connection: Basel - Zurich<br>Distance: 88000000.0 km<br></div>`)[0];
+                popup_7518fb935596a9064b67bd1061e4b4d8.setContent(html_5d0f2279452066f6ba7d104142b1cbc9);
+            
+        
+
+        poly_line_fa646b318115f1f1e715450e03fe509b.bindPopup(popup_7518fb935596a9064b67bd1061e4b4d8)
+        ;
+
+        
+    
+    
+            var poly_line_3824aa33b032cabea49e608d92554613 = L.polyline(
+                [[47.3641, 8.530788], [47.698282, 8.632756]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_6afd33f967cc83b0f8c84d86e61284f0);
+        
+    
+        var popup_2a790e73c48a5c35f7a30da7831d8d11 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_97dc3a7ca4dc353862dfa91eaccb7975 = $(`<div id="html_97dc3a7ca4dc353862dfa91eaccb7975" style="width: 100.0%; height: 100.0%;">Connection: Zurich - Schaffhausen<br>Distance: 94000000.0 km<br></div>`)[0];
+                popup_2a790e73c48a5c35f7a30da7831d8d11.setContent(html_97dc3a7ca4dc353862dfa91eaccb7975);
+            
+        
+
+        poly_line_3824aa33b032cabea49e608d92554613.bindPopup(popup_2a790e73c48a5c35f7a30da7831d8d11)
+        ;
+
+        
+    
+    
+            var poly_line_23745d68918fb3fdf7adbd21f5da5b83 = L.polyline(
+                [[47.3641, 8.530788], [47.500328, 8.723786]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_6afd33f967cc83b0f8c84d86e61284f0);
+        
+    
+        var popup_10d09c058b59796f2950b65100a0d82d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cacd015e0a79a1c0d34278bb234e8861 = $(`<div id="html_cacd015e0a79a1c0d34278bb234e8861" style="width: 100.0%; height: 100.0%;">Connection: Zurich - Winterthur<br>Distance: 100000000.0 km<br></div>`)[0];
+                popup_10d09c058b59796f2950b65100a0d82d.setContent(html_cacd015e0a79a1c0d34278bb234e8861);
+            
+        
+
+        poly_line_23745d68918fb3fdf7adbd21f5da5b83.bindPopup(popup_10d09c058b59796f2950b65100a0d82d)
+        ;
+
+        
+    
+    
+            var poly_line_647a44662ea6985e2c6daea56d9b5a9a = L.polyline(
+                [[47.500328, 8.723786], [47.658754, 9.177312]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_6afd33f967cc83b0f8c84d86e61284f0);
+        
+    
+        var popup_5ece53eee053bb39ff0255d1e86117d6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_73d2ba275286cf7fbbec6da03ac0c4d9 = $(`<div id="html_73d2ba275286cf7fbbec6da03ac0c4d9" style="width: 100.0%; height: 100.0%;">Connection: Winterthur - Konstanz<br>Distance: 108000000.0 km<br></div>`)[0];
+                popup_5ece53eee053bb39ff0255d1e86117d6.setContent(html_73d2ba275286cf7fbbec6da03ac0c4d9);
+            
+        
+
+        poly_line_647a44662ea6985e2c6daea56d9b5a9a.bindPopup(popup_5ece53eee053bb39ff0255d1e86117d6)
+        ;
+
+        
+    
+    
+            var poly_line_8821c1e749e1c39cde671194d7242d78 = L.polyline(
+                [[47.658754, 9.177312], [47.565556, 9.379444]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_6afd33f967cc83b0f8c84d86e61284f0);
+        
+    
+        var popup_6d51dabff385c7a4c3890aeb608cb0de = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_73824f9badcdf73b92687f94065b2cf8 = $(`<div id="html_73824f9badcdf73b92687f94065b2cf8" style="width: 100.0%; height: 100.0%;">Connection: Konstanz - Romanshorn<br>Distance: 20000000.0 km<br></div>`)[0];
+                popup_6d51dabff385c7a4c3890aeb608cb0de.setContent(html_73824f9badcdf73b92687f94065b2cf8);
+            
+        
+
+        poly_line_8821c1e749e1c39cde671194d7242d78.bindPopup(popup_6d51dabff385c7a4c3890aeb608cb0de)
+        ;
+
+        
+    
+    
+            var poly_line_3168235b89254231eee78b415185fc34 = L.polyline(
+                [[47.565556, 9.379444], [47.423183, 9.369873]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_6afd33f967cc83b0f8c84d86e61284f0);
+        
+    
+        var popup_0f056dfcb82d5a31d7ca2e7cf63b8789 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2cc6725c1f62f69cd922b601ffcb41cf = $(`<div id="html_2cc6725c1f62f69cd922b601ffcb41cf" style="width: 100.0%; height: 100.0%;">Connection: Romanshorn - St.Gallen<br>Distance: 20000000.0 km<br></div>`)[0];
+                popup_0f056dfcb82d5a31d7ca2e7cf63b8789.setContent(html_2cc6725c1f62f69cd922b601ffcb41cf);
+            
+        
+
+        poly_line_3168235b89254231eee78b415185fc34.bindPopup(popup_0f056dfcb82d5a31d7ca2e7cf63b8789)
+        ;
+
+        
+    
+    
+            var poly_line_31a755111e1189f89c8a50b6c20e8345 = L.polyline(
+                [[47.500328, 8.723786], [47.462389, 9.041]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_6afd33f967cc83b0f8c84d86e61284f0);
+        
+    
+        var popup_3c9d2b67731c58653467321af3458356 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_83157c8f56f37accda8d493030a4bbc6 = $(`<div id="html_83157c8f56f37accda8d493030a4bbc6" style="width: 100.0%; height: 100.0%;">Connection: Winterthur - Wil<br>Distance: 108000000.0 km<br></div>`)[0];
+                popup_3c9d2b67731c58653467321af3458356.setContent(html_83157c8f56f37accda8d493030a4bbc6);
+            
+        
+
+        poly_line_31a755111e1189f89c8a50b6c20e8345.bindPopup(popup_3c9d2b67731c58653467321af3458356)
+        ;
+
+        
+    
+    
+            var poly_line_f34c70fc5e2e37f6e927c99d65d0e0fd = L.polyline(
+                [[46.948819, 7.439117], [46.803269, 7.151031]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_6afd33f967cc83b0f8c84d86e61284f0);
+        
+    
+        var popup_fd24b51c8d56c681a961ec1b2815d7d3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bb20d31527475f1ad7ec7a8d13860666 = $(`<div id="html_bb20d31527475f1ad7ec7a8d13860666" style="width: 100.0%; height: 100.0%;">Connection: Bern - Fribourg<br>Distance: 64000000.0 km<br></div>`)[0];
+                popup_fd24b51c8d56c681a961ec1b2815d7d3.setContent(html_bb20d31527475f1ad7ec7a8d13860666);
+            
+        
+
+        poly_line_f34c70fc5e2e37f6e927c99d65d0e0fd.bindPopup(popup_fd24b51c8d56c681a961ec1b2815d7d3)
+        ;
+
+        
+    
+    
+            var poly_line_1edaddbb169f1bf3cd04a2d54cbda8b0 = L.polyline(
+                [[46.803269, 7.151031], [46.69351, 6.911815]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_6afd33f967cc83b0f8c84d86e61284f0);
+        
+    
+        var popup_3f7a372af600193df0a4e2e35fd02b3b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_025b964dcb4f149cd374ca8f2f890963 = $(`<div id="html_025b964dcb4f149cd374ca8f2f890963" style="width: 100.0%; height: 100.0%;">Connection: Fribourg - Romont<br>Distance: 50000000.0 km<br></div>`)[0];
+                popup_3f7a372af600193df0a4e2e35fd02b3b.setContent(html_025b964dcb4f149cd374ca8f2f890963);
+            
+        
+
+        poly_line_1edaddbb169f1bf3cd04a2d54cbda8b0.bindPopup(popup_3f7a372af600193df0a4e2e35fd02b3b)
+        ;
+
+        
+    
+    
+            var poly_line_5c3c062d539310f601962b98393f741f = L.polyline(
+                [[46.69351, 6.911815], [46.516785, 6.629096]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_6afd33f967cc83b0f8c84d86e61284f0);
+        
+    
+        var popup_a57c2863aae0722b875c07b48a9deb49 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5a72488418207e3104ac9d6a55a4dc8f = $(`<div id="html_5a72488418207e3104ac9d6a55a4dc8f" style="width: 100.0%; height: 100.0%;">Connection: Romont - Lausanne<br>Distance: 80000000.0 km<br></div>`)[0];
+                popup_a57c2863aae0722b875c07b48a9deb49.setContent(html_5a72488418207e3104ac9d6a55a4dc8f);
+            
+        
+
+        poly_line_5c3c062d539310f601962b98393f741f.bindPopup(popup_a57c2863aae0722b875c07b48a9deb49)
+        ;
+
+        
+    
+    
+            var poly_line_ea40e31bb9e938a28feb4097aef6829a = L.polyline(
+                [[46.516785, 6.629096], [46.210217, 6.142447]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_6afd33f967cc83b0f8c84d86e61284f0);
+        
+    
+        var popup_0cd708e6d0192dee4a0b41bdb6908bde = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6a537ca3902c4c0cad6d8437a4baaffd = $(`<div id="html_6a537ca3902c4c0cad6d8437a4baaffd" style="width: 100.0%; height: 100.0%;">Connection: Lausanne - Geneve<br>Distance: 240000000.0 km<br></div>`)[0];
+                popup_0cd708e6d0192dee4a0b41bdb6908bde.setContent(html_6a537ca3902c4c0cad6d8437a4baaffd);
+            
+        
+
+        poly_line_ea40e31bb9e938a28feb4097aef6829a.bindPopup(popup_0cd708e6d0192dee4a0b41bdb6908bde)
+        ;
+
+        
+    
+    
+            var poly_line_3b4c3046828ee4b5cdece42e63f116a5 = L.polyline(
+                [[46.516785, 6.629096], [46.435875, 6.910434]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_6afd33f967cc83b0f8c84d86e61284f0);
+        
+    
+        var popup_6f943372720ca99e1e619e8318cc1ece = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_678d3b64ff007169cfea562471061613 = $(`<div id="html_678d3b64ff007169cfea562471061613" style="width: 100.0%; height: 100.0%;">Connection: Lausanne - Montreux<br>Distance: 50000000.0 km<br></div>`)[0];
+                popup_6f943372720ca99e1e619e8318cc1ece.setContent(html_678d3b64ff007169cfea562471061613);
+            
+        
+
+        poly_line_3b4c3046828ee4b5cdece42e63f116a5.bindPopup(popup_6f943372720ca99e1e619e8318cc1ece)
+        ;
+
+        
+    
+    
+            var poly_line_c5784755f1cdceca771230be30647ad1 = L.polyline(
+                [[46.435875, 6.910434], [46.227553, 7.359197]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_6afd33f967cc83b0f8c84d86e61284f0);
+        
+    
+        var popup_8285cb073ec78ad9c63ad595f3890a8c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_240a50a1122ca5f162fc502bea94ba6e = $(`<div id="html_240a50a1122ca5f162fc502bea94ba6e" style="width: 100.0%; height: 100.0%;">Connection: Montreux - Sion<br>Distance: 134000000.0 km<br></div>`)[0];
+                popup_8285cb073ec78ad9c63ad595f3890a8c.setContent(html_240a50a1122ca5f162fc502bea94ba6e);
+            
+        
+
+        poly_line_c5784755f1cdceca771230be30647ad1.bindPopup(popup_8285cb073ec78ad9c63ad595f3890a8c)
+        ;
+
+        
+    
+    
+            var poly_line_ae476841eeb4e8eb46f844fc0e9ca95b = L.polyline(
+                [[46.227553, 7.359197], [46.293889, 7.881389]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_6afd33f967cc83b0f8c84d86e61284f0);
+        
+    
+        var popup_6ed747563396f256340da184d6f3cad7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e137f03f5bf1733a40295d7b7beb0d24 = $(`<div id="html_e137f03f5bf1733a40295d7b7beb0d24" style="width: 100.0%; height: 100.0%;">Connection: Sion - Visp<br>Distance: 90000000.0 km<br></div>`)[0];
+                popup_6ed747563396f256340da184d6f3cad7.setContent(html_e137f03f5bf1733a40295d7b7beb0d24);
+            
+        
+
+        poly_line_ae476841eeb4e8eb46f844fc0e9ca95b.bindPopup(popup_6ed747563396f256340da184d6f3cad7)
+        ;
+
+        
+    
+    
+            var poly_line_042e7a6087f22e8344808c5b183ca1a5 = L.polyline(
+                [[46.293889, 7.881389], [46.319444, 7.988056]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_6afd33f967cc83b0f8c84d86e61284f0);
+        
+    
+        var popup_aee67dd8916c7058d9ca3f4fae49c26d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_92fb019294dac08f5d948cad4b6c99f6 = $(`<div id="html_92fb019294dac08f5d948cad4b6c99f6" style="width: 100.0%; height: 100.0%;">Connection: Visp - Brig<br>Distance: 18000000.0 km<br></div>`)[0];
+                popup_aee67dd8916c7058d9ca3f4fae49c26d.setContent(html_92fb019294dac08f5d948cad4b6c99f6);
+            
+        
+
+        poly_line_042e7a6087f22e8344808c5b183ca1a5.bindPopup(popup_aee67dd8916c7058d9ca3f4fae49c26d)
+        ;
+
+        
+    
+    
+            var poly_line_da105f504c4dbbe57c6e369107244647 = L.polyline(
+                [[46.319444, 7.988056], [46.85308, 9.528919]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_6afd33f967cc83b0f8c84d86e61284f0);
+        
+    
+        var popup_0ea9befa3621d25323e3aa6f4b5f49a5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c92850335cd4fcc6b333dc6d83b97525 = $(`<div id="html_c92850335cd4fcc6b333dc6d83b97525" style="width: 100.0%; height: 100.0%;">Connection: Brig - Chur<br>Distance: 161000000.0 km<br></div>`)[0];
+                popup_0ea9befa3621d25323e3aa6f4b5f49a5.setContent(html_c92850335cd4fcc6b333dc6d83b97525);
+            
+        
+
+        poly_line_da105f504c4dbbe57c6e369107244647.bindPopup(popup_0ea9befa3621d25323e3aa6f4b5f49a5)
+        ;
+
+        
+    
+    
+            var poly_line_b84800736ed790874b45274004be8c98 = L.polyline(
+                [[46.516785, 6.629096], [46.781876, 6.641153]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_6afd33f967cc83b0f8c84d86e61284f0);
+        
+    
+        var popup_1b189d5351840617c5ac77a7dca672a6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_30a27f23cf24202a5d434ba8f2e69ff6 = $(`<div id="html_30a27f23cf24202a5d434ba8f2e69ff6" style="width: 100.0%; height: 100.0%;">Connection: Lausanne - Yverdon-les-Bains<br>Distance: 78000000.0 km<br></div>`)[0];
+                popup_1b189d5351840617c5ac77a7dca672a6.setContent(html_30a27f23cf24202a5d434ba8f2e69ff6);
+            
+        
+
+        poly_line_b84800736ed790874b45274004be8c98.bindPopup(popup_1b189d5351840617c5ac77a7dca672a6)
+        ;
+
+        
+    
+    
+            var poly_line_34580c1d4b05bb5f5fb50b959d12c5fd = L.polyline(
+                [[46.948819, 7.439117], [46.996727, 6.935713]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_6afd33f967cc83b0f8c84d86e61284f0);
+        
+    
+        var popup_8e73f53a8e6fc6f2c637c81a62514f67 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_841bf1ac4f205780d4f81924f5adc1b0 = $(`<div id="html_841bf1ac4f205780d4f81924f5adc1b0" style="width: 100.0%; height: 100.0%;">Connection: Bern - Neuchatel<br>Distance: 50000000.0 km<br></div>`)[0];
+                popup_8e73f53a8e6fc6f2c637c81a62514f67.setContent(html_841bf1ac4f205780d4f81924f5adc1b0);
+            
+        
+
+        poly_line_34580c1d4b05bb5f5fb50b959d12c5fd.bindPopup(popup_8e73f53a8e6fc6f2c637c81a62514f67)
+        ;
+
+        
+    
+    
+            var poly_line_77f94ebf02598aef0f02dde4f15759f9 = L.polyline(
+                [[46.948819, 7.439117], [47.204178, 7.542687]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_6afd33f967cc83b0f8c84d86e61284f0);
+        
+    
+        var popup_03718a9dc97a5b1f7e4eadceecda1e91 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_870369d6de37906614dcf3eb66373b6b = $(`<div id="html_870369d6de37906614dcf3eb66373b6b" style="width: 100.0%; height: 100.0%;">Connection: Bern - Solothurn<br>Distance: 43000000.0 km<br></div>`)[0];
+                popup_03718a9dc97a5b1f7e4eadceecda1e91.setContent(html_870369d6de37906614dcf3eb66373b6b);
+            
+        
+
+        poly_line_77f94ebf02598aef0f02dde4f15759f9.bindPopup(popup_03718a9dc97a5b1f7e4eadceecda1e91)
+        ;
+
+        
+    
+    
+            var poly_line_3340f02033127643d71688197b861b18 = L.polyline(
+                [[47.204178, 7.542687], [47.35193, 7.907683]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_6afd33f967cc83b0f8c84d86e61284f0);
+        
+    
+        var popup_f2d0125aafcd2b6462b8b57c433f850a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b5c360d791aadf07fab2598f2cdf7d02 = $(`<div id="html_b5c360d791aadf07fab2598f2cdf7d02" style="width: 100.0%; height: 100.0%;">Connection: Solothurn - Olten<br>Distance: 76000000.0 km<br></div>`)[0];
+                popup_f2d0125aafcd2b6462b8b57c433f850a.setContent(html_b5c360d791aadf07fab2598f2cdf7d02);
+            
+        
+
+        poly_line_3340f02033127643d71688197b861b18.bindPopup(popup_f2d0125aafcd2b6462b8b57c433f850a)
+        ;
+
+        
+    
+    
+            var poly_line_3c2ade6c8c4bca7d54190e4c07585089 = L.polyline(
+                [[47.35193, 7.907683], [47.39135, 8.051251]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_6afd33f967cc83b0f8c84d86e61284f0);
+        
+    
+        var popup_77df87412765783601c00b8b4a5bf8f5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dde15508138b9cf0f3b52bf60fbda6b5 = $(`<div id="html_dde15508138b9cf0f3b52bf60fbda6b5" style="width: 100.0%; height: 100.0%;">Connection: Olten - Aarau<br>Distance: 52000000.0 km<br></div>`)[0];
+                popup_77df87412765783601c00b8b4a5bf8f5.setContent(html_dde15508138b9cf0f3b52bf60fbda6b5);
+            
+        
+
+        poly_line_3c2ade6c8c4bca7d54190e4c07585089.bindPopup(popup_77df87412765783601c00b8b4a5bf8f5)
+        ;
+
+        
+    
+    
+            var poly_line_8235af504efea1740e8771026083e1d6 = L.polyline(
+                [[46.948819, 7.439117], [46.754853, 7.629606]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_6afd33f967cc83b0f8c84d86e61284f0);
+        
+    
+        var popup_e1f3bd15a7cd7c8608e213adaae9e7d5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_77483c4353ed10933113298a0b6e9340 = $(`<div id="html_77483c4353ed10933113298a0b6e9340" style="width: 100.0%; height: 100.0%;">Connection: Bern - Thun<br>Distance: 90000000.0 km<br></div>`)[0];
+                popup_e1f3bd15a7cd7c8608e213adaae9e7d5.setContent(html_77483c4353ed10933113298a0b6e9340);
+            
+        
+
+        poly_line_8235af504efea1740e8771026083e1d6.bindPopup(popup_e1f3bd15a7cd7c8608e213adaae9e7d5)
+        ;
+
+        
+    
+    
+            var poly_line_2fd9c52821d5f19ea4a228596126e68c = L.polyline(
+                [[46.754853, 7.629606], [46.69, 7.868889]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_6afd33f967cc83b0f8c84d86e61284f0);
+        
+    
+        var popup_f04c124e069eae83cca4bc2b42979983 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f3b0d511d5b912b8a4ed492c14e7defd = $(`<div id="html_f3b0d511d5b912b8a4ed492c14e7defd" style="width: 100.0%; height: 100.0%;">Connection: Thun - Interlaken<br>Distance: 56000000.0 km<br></div>`)[0];
+                popup_f04c124e069eae83cca4bc2b42979983.setContent(html_f3b0d511d5b912b8a4ed492c14e7defd);
+            
+        
+
+        poly_line_2fd9c52821d5f19ea4a228596126e68c.bindPopup(popup_f04c124e069eae83cca4bc2b42979983)
+        ;
+
+        
+    
+    
+            var poly_line_2541ae866309244f43bea846ecb2a558 = L.polyline(
+                [[46.69, 7.868889], [47.050169, 8.310161]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_6afd33f967cc83b0f8c84d86e61284f0);
+        
+    
+        var popup_8af7f552be03af41d9c54391d534cbaf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d989de6e44ea782a185bba3f0512741c = $(`<div id="html_d989de6e44ea782a185bba3f0512741c" style="width: 100.0%; height: 100.0%;">Connection: Interlaken - Luzern<br>Distance: 72000000.0 km<br></div>`)[0];
+                popup_8af7f552be03af41d9c54391d534cbaf.setContent(html_d989de6e44ea782a185bba3f0512741c);
+            
+        
+
+        poly_line_2541ae866309244f43bea846ecb2a558.bindPopup(popup_8af7f552be03af41d9c54391d534cbaf)
+        ;
+
+        
+    
+    
+            var poly_line_733b4fc5920718087e292a3db6ca9690 = L.polyline(
+                [[47.050169, 8.310161], [47.173622, 8.51529]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_6afd33f967cc83b0f8c84d86e61284f0);
+        
+    
+        var popup_b15922a78970d72e5d99453e014d3a20 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b09c889d077c1c640b519f2b5ce9629d = $(`<div id="html_b09c889d077c1c640b519f2b5ce9629d" style="width: 100.0%; height: 100.0%;">Connection: Luzern - Zug<br>Distance: 60000000.0 km<br></div>`)[0];
+                popup_b15922a78970d72e5d99453e014d3a20.setContent(html_b09c889d077c1c640b519f2b5ce9629d);
+            
+        
+
+        poly_line_733b4fc5920718087e292a3db6ca9690.bindPopup(popup_b15922a78970d72e5d99453e014d3a20)
+        ;
+
+        
+    
+    
+            var poly_line_ce54d62d2a1d1c5e67bbd2094a7d9192 = L.polyline(
+                [[47.050169, 8.310161], [47.049152, 8.549482]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_6afd33f967cc83b0f8c84d86e61284f0);
+        
+    
+        var popup_6bf434410c408a13ec1d4e01b541a3b5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1719404967a3eeafebf3eb845927d224 = $(`<div id="html_1719404967a3eeafebf3eb845927d224" style="width: 100.0%; height: 100.0%;">Connection: Luzern - Arth-Goldau<br>Distance: 22000000.0 km<br></div>`)[0];
+                popup_6bf434410c408a13ec1d4e01b541a3b5.setContent(html_1719404967a3eeafebf3eb845927d224);
+            
+        
+
+        poly_line_ce54d62d2a1d1c5e67bbd2094a7d9192.bindPopup(popup_6bf434410c408a13ec1d4e01b541a3b5)
+        ;
+
+        
+    
+    
+            var poly_line_b9c3009babe497a62724b40414ea99ce = L.polyline(
+                [[47.049152, 8.549482], [46.19544, 9.029505]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_6afd33f967cc83b0f8c84d86e61284f0);
+        
+    
+        var popup_899f91b222ac12ca80ea276680108d33 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fdc12d88744935fc8203fe50a60be9a8 = $(`<div id="html_fdc12d88744935fc8203fe50a60be9a8" style="width: 100.0%; height: 100.0%;">Connection: Arth-Goldau - Bellinzona<br>Distance: 200000000.0 km<br></div>`)[0];
+                popup_899f91b222ac12ca80ea276680108d33.setContent(html_fdc12d88744935fc8203fe50a60be9a8);
+            
+        
+
+        poly_line_b9c3009babe497a62724b40414ea99ce.bindPopup(popup_899f91b222ac12ca80ea276680108d33)
+        ;
+
+        
+    
+    
+            var poly_line_d71ea473921073b1962f962d7b1d318a = L.polyline(
+                [[46.19544, 9.029505], [46.00551, 8.946878]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_6afd33f967cc83b0f8c84d86e61284f0);
+        
+    
+        var popup_dcf9dcdb4e63f43e7deaf47d361ee0b4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_293d28ab0805e61de8ee51d7923d7653 = $(`<div id="html_293d28ab0805e61de8ee51d7923d7653" style="width: 100.0%; height: 100.0%;">Connection: Bellinzona - Lugano<br>Distance: 58000000.0 km<br></div>`)[0];
+                popup_dcf9dcdb4e63f43e7deaf47d361ee0b4.setContent(html_293d28ab0805e61de8ee51d7923d7653);
+            
+        
+
+        poly_line_d71ea473921073b1962f962d7b1d318a.bindPopup(popup_dcf9dcdb4e63f43e7deaf47d361ee0b4)
+        ;
+
+        
+    
+    
+            var poly_line_22b1fa0520da5e84069c9cbf5849630d = L.polyline(
+                [[46.00551, 8.946878], [45.83219, 9.031449]],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_6afd33f967cc83b0f8c84d86e61284f0);
+        
+    
+        var popup_4026876bddb39fd7d6ae173a70ff96c1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b88c180a8b92f192b1e076e56332181a = $(`<div id="html_b88c180a8b92f192b1e076e56332181a" style="width: 100.0%; height: 100.0%;">Connection: Lugano - Chiasso<br>Distance: 50000000.0 km<br></div>`)[0];
+                popup_4026876bddb39fd7d6ae173a70ff96c1.setContent(html_b88c180a8b92f192b1e076e56332181a);
+            
+        
+
+        poly_line_22b1fa0520da5e84069c9cbf5849630d.bindPopup(popup_4026876bddb39fd7d6ae173a70ff96c1)
+        ;
+
+        
+    
+    
+            var circle_2141bc6617cb15550f9c7651bd731350 = L.circle(
+                [47.39135, 8.051251],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_6afd33f967cc83b0f8c84d86e61284f0);
+        
+    
+        var popup_5113a8265b557b7f00f0d614b62a2310 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eab4f198fc5ce628e104f9b24c392ca0 = $(`<div id="html_eab4f198fc5ce628e104f9b24c392ca0" style="width: 100.0%; height: 100.0%;">Aarau<br>21268 habitants</div>`)[0];
+                popup_5113a8265b557b7f00f0d614b62a2310.setContent(html_eab4f198fc5ce628e104f9b24c392ca0);
+            
+        
+
+        circle_2141bc6617cb15550f9c7651bd731350.bindPopup(popup_5113a8265b557b7f00f0d614b62a2310)
+        ;
+
+        
+    
+    
+            var circle_f5f033fd1eab9be5e29e79dec57c23c7 = L.circle(
+                [47.049152, 8.549482],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_6afd33f967cc83b0f8c84d86e61284f0);
+        
+    
+        var popup_72490c8c729c4c51af9d13c74bd27be1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ad05139fd914233a2268488ad1e9f5a4 = $(`<div id="html_ad05139fd914233a2268488ad1e9f5a4" style="width: 100.0%; height: 100.0%;">Arth-Goldau<br>10480 habitants</div>`)[0];
+                popup_72490c8c729c4c51af9d13c74bd27be1.setContent(html_ad05139fd914233a2268488ad1e9f5a4);
+            
+        
+
+        circle_f5f033fd1eab9be5e29e79dec57c23c7.bindPopup(popup_72490c8c729c4c51af9d13c74bd27be1)
+        ;
+
+        
+    
+    
+            var circle_15d473d388f8cb2c320204567854c6c7 = L.circle(
+                [47.546944, 7.59],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_6afd33f967cc83b0f8c84d86e61284f0);
+        
+    
+        var popup_b0a6bea0674e4c0c63e4faa58d63763e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bba616cad9d85203cfb87fabfed0b823 = $(`<div id="html_bba616cad9d85203cfb87fabfed0b823" style="width: 100.0%; height: 100.0%;">Basel<br>177595 habitants</div>`)[0];
+                popup_b0a6bea0674e4c0c63e4faa58d63763e.setContent(html_bba616cad9d85203cfb87fabfed0b823);
+            
+        
+
+        circle_15d473d388f8cb2c320204567854c6c7.bindPopup(popup_b0a6bea0674e4c0c63e4faa58d63763e)
+        ;
+
+        
+    
+    
+            var circle_15f5ca40fd25e0907fedcf17c8f2f18f = L.circle(
+                [46.19544, 9.029505],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_6afd33f967cc83b0f8c84d86e61284f0);
+        
+    
+        var popup_a42f3650cd510f816a3e16e916ce21c1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2a8f7e02a10caa52b72fa76ea35f60e0 = $(`<div id="html_2a8f7e02a10caa52b72fa76ea35f60e0" style="width: 100.0%; height: 100.0%;">Bellinzona<br>43220 habitants</div>`)[0];
+                popup_a42f3650cd510f816a3e16e916ce21c1.setContent(html_2a8f7e02a10caa52b72fa76ea35f60e0);
+            
+        
+
+        circle_15f5ca40fd25e0907fedcf17c8f2f18f.bindPopup(popup_a42f3650cd510f816a3e16e916ce21c1)
+        ;
+
+        
+    
+    
+            var circle_65c7167a3d60b72a40bc3dfb2aa158b8 = L.circle(
+                [46.948819, 7.439117],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_6afd33f967cc83b0f8c84d86e61284f0);
+        
+    
+        var popup_105e871c9e51715feadba4113597fea0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3491cf018c4f225ae09341057571f6cd = $(`<div id="html_3491cf018c4f225ae09341057571f6cd" style="width: 100.0%; height: 100.0%;">Bern<br>133798 habitants</div>`)[0];
+                popup_105e871c9e51715feadba4113597fea0.setContent(html_3491cf018c4f225ae09341057571f6cd);
+            
+        
+
+        circle_65c7167a3d60b72a40bc3dfb2aa158b8.bindPopup(popup_105e871c9e51715feadba4113597fea0)
+        ;
+
+        
+    
+    
+            var circle_ae307b7ae2056cf383ff47ba33be1028 = L.circle(
+                [47.132885, 7.242918],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_6afd33f967cc83b0f8c84d86e61284f0);
+        
+    
+        var popup_a03048d354139c2906aaf32234472681 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_299aa221ebffb67b51d37872c5eac717 = $(`<div id="html_299aa221ebffb67b51d37872c5eac717" style="width: 100.0%; height: 100.0%;">Biel/Bienne<br>54456 habitants</div>`)[0];
+                popup_a03048d354139c2906aaf32234472681.setContent(html_299aa221ebffb67b51d37872c5eac717);
+            
+        
+
+        circle_ae307b7ae2056cf383ff47ba33be1028.bindPopup(popup_a03048d354139c2906aaf32234472681)
+        ;
+
+        
+    
+    
+            var circle_59a9490642a56e914c8f4f1339d30060 = L.circle(
+                [46.319444, 7.988056],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_6afd33f967cc83b0f8c84d86e61284f0);
+        
+    
+        var popup_71dc067bf9936980af25b1e0b3202cca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6414f2a981071d91a183fa0a1c61f5e3 = $(`<div id="html_6414f2a981071d91a183fa0a1c61f5e3" style="width: 100.0%; height: 100.0%;">Brig<br>13109 habitants</div>`)[0];
+                popup_71dc067bf9936980af25b1e0b3202cca.setContent(html_6414f2a981071d91a183fa0a1c61f5e3);
+            
+        
+
+        circle_59a9490642a56e914c8f4f1339d30060.bindPopup(popup_71dc067bf9936980af25b1e0b3202cca)
+        ;
+
+        
+    
+    
+            var circle_e9a6a936e963e315b1836443619d27bb = L.circle(
+                [45.83219, 9.031449],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_6afd33f967cc83b0f8c84d86e61284f0);
+        
+    
+        var popup_c4bf73c4f9bd078bd5e0cdc91b318d1f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6231a81d7f4ffd3e1456534f67130077 = $(`<div id="html_6231a81d7f4ffd3e1456534f67130077" style="width: 100.0%; height: 100.0%;">Chiasso<br>7853 habitants</div>`)[0];
+                popup_c4bf73c4f9bd078bd5e0cdc91b318d1f.setContent(html_6231a81d7f4ffd3e1456534f67130077);
+            
+        
+
+        circle_e9a6a936e963e315b1836443619d27bb.bindPopup(popup_c4bf73c4f9bd078bd5e0cdc91b318d1f)
+        ;
+
+        
+    
+    
+            var circle_9264c1eb71f534525dd0f3a29b57e270 = L.circle(
+                [46.85308, 9.528919],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_6afd33f967cc83b0f8c84d86e61284f0);
+        
+    
+        var popup_cd40ba0e9207e6997367bacd23811501 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d5b72a703e775b620e0c8be0c66721c0 = $(`<div id="html_d5b72a703e775b620e0c8be0c66721c0" style="width: 100.0%; height: 100.0%;">Chur<br>35038 habitants</div>`)[0];
+                popup_cd40ba0e9207e6997367bacd23811501.setContent(html_d5b72a703e775b620e0c8be0c66721c0);
+            
+        
+
+        circle_9264c1eb71f534525dd0f3a29b57e270.bindPopup(popup_cd40ba0e9207e6997367bacd23811501)
+        ;
+
+        
+    
+    
+            var circle_34c545472bc1e5aa51a16a2e4098a08a = L.circle(
+                [47.361996, 7.350065],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_6afd33f967cc83b0f8c84d86e61284f0);
+        
+    
+        var popup_263480b074bb2238d49141696ee9f739 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e4d0c5e96d13b56fce9d1ff9a276fb89 = $(`<div id="html_e4d0c5e96d13b56fce9d1ff9a276fb89" style="width: 100.0%; height: 100.0%;">Delemont<br>11454 habitants</div>`)[0];
+                popup_263480b074bb2238d49141696ee9f739.setContent(html_e4d0c5e96d13b56fce9d1ff9a276fb89);
+            
+        
+
+        circle_34c545472bc1e5aa51a16a2e4098a08a.bindPopup(popup_263480b074bb2238d49141696ee9f739)
+        ;
+
+        
+    
+    
+            var circle_dd441da7a6a8b94caefff0f6037b2e82 = L.circle(
+                [46.803269, 7.151031],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_6afd33f967cc83b0f8c84d86e61284f0);
+        
+    
+        var popup_e5aa4d05a85a5d81c3345e976770db52 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cbc9d2ce674810829e955944668edd68 = $(`<div id="html_cbc9d2ce674810829e955944668edd68" style="width: 100.0%; height: 100.0%;">Fribourg<br>38365 habitants</div>`)[0];
+                popup_e5aa4d05a85a5d81c3345e976770db52.setContent(html_cbc9d2ce674810829e955944668edd68);
+            
+        
+
+        circle_dd441da7a6a8b94caefff0f6037b2e82.bindPopup(popup_e5aa4d05a85a5d81c3345e976770db52)
+        ;
+
+        
+    
+    
+            var circle_e69c98f30378f2ed5ef09312d6818fe5 = L.circle(
+                [46.210217, 6.142447],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_6afd33f967cc83b0f8c84d86e61284f0);
+        
+    
+        var popup_0140a948366ffee363c08485dbc2cc52 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b47a2867d8099c4fe186f785ad5829b0 = $(`<div id="html_b47a2867d8099c4fe186f785ad5829b0" style="width: 100.0%; height: 100.0%;">Geneve<br>201818 habitants</div>`)[0];
+                popup_0140a948366ffee363c08485dbc2cc52.setContent(html_b47a2867d8099c4fe186f785ad5829b0);
+            
+        
+
+        circle_e69c98f30378f2ed5ef09312d6818fe5.bindPopup(popup_0140a948366ffee363c08485dbc2cc52)
+        ;
+
+        
+    
+    
+            var circle_477bdbf7f4b2aaf97b3edf6778c38293 = L.circle(
+                [46.69, 7.868889],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_6afd33f967cc83b0f8c84d86e61284f0);
+        
+    
+        var popup_31957413a8acc2c626b2cfe501a9e51b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f77883f03cb3504f7962f07983f2f368 = $(`<div id="html_f77883f03cb3504f7962f07983f2f368" style="width: 100.0%; height: 100.0%;">Interlaken<br>5319 habitants</div>`)[0];
+                popup_31957413a8acc2c626b2cfe501a9e51b.setContent(html_f77883f03cb3504f7962f07983f2f368);
+            
+        
+
+        circle_477bdbf7f4b2aaf97b3edf6778c38293.bindPopup(popup_31957413a8acc2c626b2cfe501a9e51b)
+        ;
+
+        
+    
+    
+            var circle_e4a4070702a7f8a6546f43dbe6c26521 = L.circle(
+                [47.658754, 9.177312],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_6afd33f967cc83b0f8c84d86e61284f0);
+        
+    
+        var popup_d90dd14cb137e117b88ca846a729e78c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_09bc457ab0e25979ab7bedb584bb5413 = $(`<div id="html_09bc457ab0e25979ab7bedb584bb5413" style="width: 100.0%; height: 100.0%;">Konstanz<br>84911 habitants</div>`)[0];
+                popup_d90dd14cb137e117b88ca846a729e78c.setContent(html_09bc457ab0e25979ab7bedb584bb5413);
+            
+        
+
+        circle_e4a4070702a7f8a6546f43dbe6c26521.bindPopup(popup_d90dd14cb137e117b88ca846a729e78c)
+        ;
+
+        
+    
+    
+            var circle_047b6e60a978e030cb7969917d9c4a12 = L.circle(
+                [46.516785, 6.629096],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_6afd33f967cc83b0f8c84d86e61284f0);
+        
+    
+        var popup_786190cfbc05fc1c6ed36bf49d00702f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_781d3be9bfb873a471c261a32ac3e4f3 = $(`<div id="html_781d3be9bfb873a471c261a32ac3e4f3" style="width: 100.0%; height: 100.0%;">Lausanne<br>138905 habitants</div>`)[0];
+                popup_786190cfbc05fc1c6ed36bf49d00702f.setContent(html_781d3be9bfb873a471c261a32ac3e4f3);
+            
+        
+
+        circle_047b6e60a978e030cb7969917d9c4a12.bindPopup(popup_786190cfbc05fc1c6ed36bf49d00702f)
+        ;
+
+        
+    
+    
+            var circle_ef87b29f39ba340f1a506b9b6cb7d857 = L.circle(
+                [47.484461, 7.731367],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_6afd33f967cc83b0f8c84d86e61284f0);
+        
+    
+        var popup_5344310bb42d59da1b98708f1c12b1d7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0aba7802b85a4fcb52fc4c2cebc93943 = $(`<div id="html_0aba7802b85a4fcb52fc4c2cebc93943" style="width: 100.0%; height: 100.0%;">Liestal<br>14390 habitants</div>`)[0];
+                popup_5344310bb42d59da1b98708f1c12b1d7.setContent(html_0aba7802b85a4fcb52fc4c2cebc93943);
+            
+        
+
+        circle_ef87b29f39ba340f1a506b9b6cb7d857.bindPopup(popup_5344310bb42d59da1b98708f1c12b1d7)
+        ;
+
+        
+    
+    
+            var circle_1f31349850e6afd8838f1cf433337479 = L.circle(
+                [47.050169, 8.310161],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_6afd33f967cc83b0f8c84d86e61284f0);
+        
+    
+        var popup_f348eda419dd2624996f0a0145e69bd8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cc0f60faad1715cc5b1319dafc52657c = $(`<div id="html_cc0f60faad1715cc5b1319dafc52657c" style="width: 100.0%; height: 100.0%;">Luzern<br>81691 habitants</div>`)[0];
+                popup_f348eda419dd2624996f0a0145e69bd8.setContent(html_cc0f60faad1715cc5b1319dafc52657c);
+            
+        
+
+        circle_1f31349850e6afd8838f1cf433337479.bindPopup(popup_f348eda419dd2624996f0a0145e69bd8)
+        ;
+
+        
+    
+    
+            var circle_8b4c60be6fb4d7d5424c6f2c5e93334a = L.circle(
+                [46.00551, 8.946878],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_6afd33f967cc83b0f8c84d86e61284f0);
+        
+    
+        var popup_0e98b201bdb690690ed6e074f27e5227 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ad8bef3fd9884e83c9298f3030378157 = $(`<div id="html_ad8bef3fd9884e83c9298f3030378157" style="width: 100.0%; height: 100.0%;">Lugano<br>63185 habitants</div>`)[0];
+                popup_0e98b201bdb690690ed6e074f27e5227.setContent(html_ad8bef3fd9884e83c9298f3030378157);
+            
+        
+
+        circle_8b4c60be6fb4d7d5424c6f2c5e93334a.bindPopup(popup_0e98b201bdb690690ed6e074f27e5227)
+        ;
+
+        
+    
+    
+            var circle_fc730657eb319551778b75c0e20b4572 = L.circle(
+                [46.435875, 6.910434],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_6afd33f967cc83b0f8c84d86e61284f0);
+        
+    
+        var popup_50f8518d1e0917072d49482e13bb370b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e0f6538085ceaa86f17896b86af2143b = $(`<div id="html_e0f6538085ceaa86f17896b86af2143b" style="width: 100.0%; height: 100.0%;">Montreux<br>25984 habitants</div>`)[0];
+                popup_50f8518d1e0917072d49482e13bb370b.setContent(html_e0f6538085ceaa86f17896b86af2143b);
+            
+        
+
+        circle_fc730657eb319551778b75c0e20b4572.bindPopup(popup_50f8518d1e0917072d49482e13bb370b)
+        ;
+
+        
+    
+    
+            var circle_1979c7fbf50c053bd1a1ede33d57fdd8 = L.circle(
+                [46.996727, 6.935713],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_6afd33f967cc83b0f8c84d86e61284f0);
+        
+    
+        var popup_09165e183547ba677971bfa62ad94126 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_99dd623f8b68c73f3627f4be991d9d1a = $(`<div id="html_99dd623f8b68c73f3627f4be991d9d1a" style="width: 100.0%; height: 100.0%;">Neuchatel<br>33475 habitants</div>`)[0];
+                popup_09165e183547ba677971bfa62ad94126.setContent(html_99dd623f8b68c73f3627f4be991d9d1a);
+            
+        
+
+        circle_1979c7fbf50c053bd1a1ede33d57fdd8.bindPopup(popup_09165e183547ba677971bfa62ad94126)
+        ;
+
+        
+    
+    
+            var circle_b4e3bd7b741fab25966348594e0b63f3 = L.circle(
+                [47.35193, 7.907683],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_6afd33f967cc83b0f8c84d86e61284f0);
+        
+    
+        var popup_27899d22f6a9991999c7228aa4c23159 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d6c5285154ea2bd7285231449b6f5281 = $(`<div id="html_d6c5285154ea2bd7285231449b6f5281" style="width: 100.0%; height: 100.0%;">Olten<br>17133 habitants</div>`)[0];
+                popup_27899d22f6a9991999c7228aa4c23159.setContent(html_d6c5285154ea2bd7285231449b6f5281);
+            
+        
+
+        circle_b4e3bd7b741fab25966348594e0b63f3.bindPopup(popup_27899d22f6a9991999c7228aa4c23159)
+        ;
+
+        
+    
+    
+            var circle_7f4534b94304b1473eb9957cf22a4e02 = L.circle(
+                [47.565556, 9.379444],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_6afd33f967cc83b0f8c84d86e61284f0);
+        
+    
+        var popup_82b0437c96f5deb91494a0361160c787 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_de4ef661f10b0ced63917eff2a3dc747 = $(`<div id="html_de4ef661f10b0ced63917eff2a3dc747" style="width: 100.0%; height: 100.0%;">Romanshorn<br>9490 habitants</div>`)[0];
+                popup_82b0437c96f5deb91494a0361160c787.setContent(html_de4ef661f10b0ced63917eff2a3dc747);
+            
+        
+
+        circle_7f4534b94304b1473eb9957cf22a4e02.bindPopup(popup_82b0437c96f5deb91494a0361160c787)
+        ;
+
+        
+    
+    
+            var circle_add014fdea485896e6cc35acf60925a7 = L.circle(
+                [46.69351, 6.911815],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_6afd33f967cc83b0f8c84d86e61284f0);
+        
+    
+        var popup_c2f7639a4b2bc4ae6c61e74dde9c3210 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_12b08ee85d8ffc2109c1ed73f6ad8871 = $(`<div id="html_12b08ee85d8ffc2109c1ed73f6ad8871" style="width: 100.0%; height: 100.0%;">Romont<br>4272 habitants</div>`)[0];
+                popup_c2f7639a4b2bc4ae6c61e74dde9c3210.setContent(html_12b08ee85d8ffc2109c1ed73f6ad8871);
+            
+        
+
+        circle_add014fdea485896e6cc35acf60925a7.bindPopup(popup_c2f7639a4b2bc4ae6c61e74dde9c3210)
+        ;
+
+        
+    
+    
+            var circle_8ac543b1572db4cd5986b47e223bc7ea = L.circle(
+                [47.423183, 9.369873],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_6afd33f967cc83b0f8c84d86e61284f0);
+        
+    
+        var popup_1b263078aea55e2af70dede09104d8da = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6c6e90a25cd156f26d217b7b68c99ea7 = $(`<div id="html_6c6e90a25cd156f26d217b7b68c99ea7" style="width: 100.0%; height: 100.0%;">St.Gallen<br>75833 habitants</div>`)[0];
+                popup_1b263078aea55e2af70dede09104d8da.setContent(html_6c6e90a25cd156f26d217b7b68c99ea7);
+            
+        
+
+        circle_8ac543b1572db4cd5986b47e223bc7ea.bindPopup(popup_1b263078aea55e2af70dede09104d8da)
+        ;
+
+        
+    
+    
+            var circle_543789896a9bd47eca1ab4b1a40ec7a2 = L.circle(
+                [47.698282, 8.632756],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_6afd33f967cc83b0f8c84d86e61284f0);
+        
+    
+        var popup_27a6cddd8aa0276dbd63126eb2dae675 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9dfbe4f2b727ecb6bbcf2f77b587e6ef = $(`<div id="html_9dfbe4f2b727ecb6bbcf2f77b587e6ef" style="width: 100.0%; height: 100.0%;">Schaffhausen<br>36587 habitants</div>`)[0];
+                popup_27a6cddd8aa0276dbd63126eb2dae675.setContent(html_9dfbe4f2b727ecb6bbcf2f77b587e6ef);
+            
+        
+
+        circle_543789896a9bd47eca1ab4b1a40ec7a2.bindPopup(popup_27a6cddd8aa0276dbd63126eb2dae675)
+        ;
+
+        
+    
+    
+            var circle_fa45c3108ec2fa0bbdc608cfc8f1af58 = L.circle(
+                [46.227553, 7.359197],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_6afd33f967cc83b0f8c84d86e61284f0);
+        
+    
+        var popup_0bfa2dabaaf0b26b798074b78ff2b377 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b420712465945573ffc497977829f82b = $(`<div id="html_b420712465945573ffc497977829f82b" style="width: 100.0%; height: 100.0%;">Sion<br>34708 habitants</div>`)[0];
+                popup_0bfa2dabaaf0b26b798074b78ff2b377.setContent(html_b420712465945573ffc497977829f82b);
+            
+        
+
+        circle_fa45c3108ec2fa0bbdc608cfc8f1af58.bindPopup(popup_0bfa2dabaaf0b26b798074b78ff2b377)
+        ;
+
+        
+    
+    
+            var circle_4397044510a18135e5e375252de0bfd5 = L.circle(
+                [47.204178, 7.542687],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_6afd33f967cc83b0f8c84d86e61284f0);
+        
+    
+        var popup_c25655069deb984baea0c1369cbd3aa8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f7918d60325280ef69b0b2b35e80f000 = $(`<div id="html_f7918d60325280ef69b0b2b35e80f000" style="width: 100.0%; height: 100.0%;">Solothurn<br>16777 habitants</div>`)[0];
+                popup_c25655069deb984baea0c1369cbd3aa8.setContent(html_f7918d60325280ef69b0b2b35e80f000);
+            
+        
+
+        circle_4397044510a18135e5e375252de0bfd5.bindPopup(popup_c25655069deb984baea0c1369cbd3aa8)
+        ;
+
+        
+    
+    
+            var circle_9a4ae82d29b1163f1aaa55ea61d5ad6f = L.circle(
+                [46.754853, 7.629606],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_6afd33f967cc83b0f8c84d86e61284f0);
+        
+    
+        var popup_2edf956f1dea829b72b222d9a55e8bb2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_25a777bfaffa8b2377e39d561c308f77 = $(`<div id="html_25a777bfaffa8b2377e39d561c308f77" style="width: 100.0%; height: 100.0%;">Thun<br>43743 habitants</div>`)[0];
+                popup_2edf956f1dea829b72b222d9a55e8bb2.setContent(html_25a777bfaffa8b2377e39d561c308f77);
+            
+        
+
+        circle_9a4ae82d29b1163f1aaa55ea61d5ad6f.bindPopup(popup_2edf956f1dea829b72b222d9a55e8bb2)
+        ;
+
+        
+    
+    
+            var circle_271afa4fdbc21fe5c6b2eaef37bac863 = L.circle(
+                [46.293889, 7.881389],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_6afd33f967cc83b0f8c84d86e61284f0);
+        
+    
+        var popup_cce844064dcc7ca092322b7e4c801462 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_050ea5cf24bfde0c0982fbf4c6fc8258 = $(`<div id="html_050ea5cf24bfde0c0982fbf4c6fc8258" style="width: 100.0%; height: 100.0%;">Visp<br>6777 habitants</div>`)[0];
+                popup_cce844064dcc7ca092322b7e4c801462.setContent(html_050ea5cf24bfde0c0982fbf4c6fc8258);
+            
+        
+
+        circle_271afa4fdbc21fe5c6b2eaef37bac863.bindPopup(popup_cce844064dcc7ca092322b7e4c801462)
+        ;
+
+        
+    
+    
+            var circle_d39bdefbf37599b33416edf285c6c418 = L.circle(
+                [47.462389, 9.041],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_6afd33f967cc83b0f8c84d86e61284f0);
+        
+    
+        var popup_811166b40c3b0977abc5af1983c4c83c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d30a4149fa4bed84d98c47d9eb2c963d = $(`<div id="html_d30a4149fa4bed84d98c47d9eb2c963d" style="width: 100.0%; height: 100.0%;">Wil<br>23768 habitants</div>`)[0];
+                popup_811166b40c3b0977abc5af1983c4c83c.setContent(html_d30a4149fa4bed84d98c47d9eb2c963d);
+            
+        
+
+        circle_d39bdefbf37599b33416edf285c6c418.bindPopup(popup_811166b40c3b0977abc5af1983c4c83c)
+        ;
+
+        
+    
+    
+            var circle_8ffec5474d32e61cf62a2c9fb736adef = L.circle(
+                [47.500328, 8.723786],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_6afd33f967cc83b0f8c84d86e61284f0);
+        
+    
+        var popup_cf391cc9389376a8e88fb5c115fd7904 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1a8d6c8c71bd811089162d016927d2a7 = $(`<div id="html_1a8d6c8c71bd811089162d016927d2a7" style="width: 100.0%; height: 100.0%;">Winterthur<br>109775 habitants</div>`)[0];
+                popup_cf391cc9389376a8e88fb5c115fd7904.setContent(html_1a8d6c8c71bd811089162d016927d2a7);
+            
+        
+
+        circle_8ffec5474d32e61cf62a2c9fb736adef.bindPopup(popup_cf391cc9389376a8e88fb5c115fd7904)
+        ;
+
+        
+    
+    
+            var circle_97133033ed659dc083df76fe5fce5762 = L.circle(
+                [46.781876, 6.641153],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_6afd33f967cc83b0f8c84d86e61284f0);
+        
+    
+        var popup_4a73b8e01a6ca3f5265d12c2fd2c6526 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9730c08c1eda8ecf643a0960a06fa0ed = $(`<div id="html_9730c08c1eda8ecf643a0960a06fa0ed" style="width: 100.0%; height: 100.0%;">Yverdon-les-Bains<br>30157 habitants</div>`)[0];
+                popup_4a73b8e01a6ca3f5265d12c2fd2c6526.setContent(html_9730c08c1eda8ecf643a0960a06fa0ed);
+            
+        
+
+        circle_97133033ed659dc083df76fe5fce5762.bindPopup(popup_4a73b8e01a6ca3f5265d12c2fd2c6526)
+        ;
+
+        
+    
+    
+            var circle_fcca457714785b06cd01a434a4b49b66 = L.circle(
+                [47.173622, 8.51529],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_6afd33f967cc83b0f8c84d86e61284f0);
+        
+    
+        var popup_08f4d87ca5d55338fd90b928eceab4a0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_edb1737f816824fac3199370a459c073 = $(`<div id="html_edb1737f816824fac3199370a459c073" style="width: 100.0%; height: 100.0%;">Zug<br>30542 habitants</div>`)[0];
+                popup_08f4d87ca5d55338fd90b928eceab4a0.setContent(html_edb1737f816824fac3199370a459c073);
+            
+        
+
+        circle_fcca457714785b06cd01a434a4b49b66.bindPopup(popup_08f4d87ca5d55338fd90b928eceab4a0)
+        ;
+
+        
+    
+    
+            var circle_0c7d61a742c453f4ddfb45f72377cefa = L.circle(
+                [47.3641, 8.530788],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_6afd33f967cc83b0f8c84d86e61284f0);
+        
+    
+        var popup_1ec2e147e4f402a527a18522930cd5fc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c012ed8711fc428856a62909ca685dcd = $(`<div id="html_c012ed8711fc428856a62909ca685dcd" style="width: 100.0%; height: 100.0%;">Zurich<br>434008 habitants</div>`)[0];
+                popup_1ec2e147e4f402a527a18522930cd5fc.setContent(html_c012ed8711fc428856a62909ca685dcd);
+            
+        
+
+        circle_0c7d61a742c453f4ddfb45f72377cefa.bindPopup(popup_1ec2e147e4f402a527a18522930cd5fc)
+        ;
+
+        
+    
+</script>
+</html>
